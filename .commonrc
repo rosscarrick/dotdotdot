@@ -1,0 +1,2 @@
+alias g=git
+alias c='/usr/bin/git --git-dir=/home/ross/.cfg/ --work-tree=/home/ross'
