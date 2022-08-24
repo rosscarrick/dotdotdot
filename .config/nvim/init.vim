@@ -38,3 +38,8 @@ let g:netrw_liststyle=3
 set foldmethod=indent
 set foldlevelstart=99
 
+" Plugins
+call plug#begin("~/.config/nvim/autoload")
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+call plug#end()
