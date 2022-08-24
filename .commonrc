@@ -1,3 +1,7 @@
+export EDITOR='vim'
+
 alias g=git
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='~/.nvim/bin/nvim'
+alias vim='vi'
+alias lal='ls -la'
