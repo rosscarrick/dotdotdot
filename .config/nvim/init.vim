@@ -45,8 +45,14 @@ set foldlevelstart=99
 call plug#begin("~/.config/nvim/autoload")
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'overcache/NeoSolarized'
 call plug#end()
 
+"""""
+"""""
+""""" Colour
+set termguicolors
+colorscheme NeoSolarized
 
 """""
 """""
