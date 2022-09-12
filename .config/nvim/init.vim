@@ -43,6 +43,7 @@ set foldlevelstart=99
 """"" Plugins
 
 call plug#begin("~/.config/nvim/autoload")
+source ~/.config/nvim/plugin-config/coc.vim
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'overcache/NeoSolarized'
