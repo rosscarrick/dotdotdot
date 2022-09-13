@@ -58,6 +58,16 @@ colorscheme NeoSolarized
 """""
 """""
 """"" Mappings 
+let mapleader = " "
+
+" Double-space to save
+nnoremap <Leader><Leader> :w<Cr>
+
+" Space+j to go to prev buffer
+nnoremap <Leader>j <C-^>
+
+" Space+n go to next match
+nnoremap <Leader>n *
 
 " Tab = toggle fold
 nnoremap <tab> za
