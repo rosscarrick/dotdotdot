@@ -146,6 +146,142 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Hold c+v to activate selection with home row",
+            "manipulators": [
+              {
+                "description": "Hold c + v > select modifier",
+                "from": {
+                  "simultaneous": [{ "key_code": "c" }, { "key_code": "v" }]
+                },
+                "to": [
+                  { "set_variable": { "name": "cv_held_down", "value": 1 } }
+                ],
+                "to_after_key_up": [
+                  { "set_variable": { "name": "cv_held_down", "value": 0 } }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + k > select up",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "k" },
+                "to": [{ "key_code": "up_arrow", "modifiers": ["left_shift"] }],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + j > select down",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "j" },
+                "to": [
+                  { "key_code": "down_arrow", "modifiers": ["left_shift"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + h > select left",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "h" },
+                "to": [
+                  { "key_code": "left_arrow", "modifiers": ["left_shift"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + l > select right",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "l" },
+                "to": [
+                  { "key_code": "right_arrow", "modifiers": ["left_shift"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + comma > select right 1 word",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "comma" },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_option", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + m > select left 1 word",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "m" },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_option", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + n > select start of line",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "n" },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_command", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + period > select end of line",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "period" },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_command", "left_shift"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + i > select page up",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "i" },
+                "to": [{ "key_code": "page_up", "modifiers": ["left_shift"] }],
+                "type": "basic"
+              },
+              {
+                "description": "cv held + u > select page down",
+                "conditions": [
+                  { "name": "cv_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "u" },
+                "to": [
+                  { "key_code": "page_down", "modifiers": ["left_shift"] }
+                ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
