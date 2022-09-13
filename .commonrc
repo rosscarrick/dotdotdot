@@ -26,3 +26,12 @@ alias vi='nvim'
 alias vim='vi'
 alias vimrc='vi ~/.config/nvim/init.vim'
 alias lal='ls -la'
+
+# Create hidden-config if missing
+if [ -f ~/.hidden-config ]; then
+    source ~/.hidden-config
+else
+    print "404: '~/.hidden-config' not found. Creating it!"
+    touch ~/.hidden-config
+fi
+
