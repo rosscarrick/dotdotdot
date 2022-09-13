@@ -15,7 +15,139 @@
           "basic.to_if_held_down_threshold_milliseconds": 500,
           "mouse_motion_to_scroll.speed": 100
         },
-        "rules": []
+        "rules": [
+          {
+            "description": "Mute cmd + w",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "mandatory": ["left_command"]
+                  }
+                },
+                "to": [],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Hold d+f to activate navigation with home row",
+            "manipulators": [
+              {
+                "description": "Hold d + f > move modifier",
+                "from": {
+                  "simultaneous": [{ "key_code": "d" }, { "key_code": "f" }]
+                },
+                "to": [
+                  { "set_variable": { "name": "df_held_down", "value": 1 } }
+                ],
+                "to_after_key_up": [
+                  { "set_variable": { "name": "df_held_down", "value": 0 } }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "df held + k > move up",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "k" },
+                "to": [{ "key_code": "up_arrow", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "df held + j > move down",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "j" },
+                "to": [{ "key_code": "down_arrow", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "df held + h > move left",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "h" },
+                "to": [{ "key_code": "left_arrow", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "df held + l > move right",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "l" },
+                "to": [{ "key_code": "right_arrow", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "df held + comma > right 1 word",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "comma" },
+                "to": [
+                  { "key_code": "right_arrow", "modifiers": ["left_option"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "df held + m > left 1 word",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "m" },
+                "to": [
+                  { "key_code": "left_arrow", "modifiers": ["left_option"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "df held + n > start of line",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "n" },
+                "to": [
+                  { "key_code": "left_arrow", "modifiers": ["left_command"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "df held + period > end of line",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "period" },
+                "to": [
+                  { "key_code": "right_arrow", "modifiers": ["left_command"] }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "df held + i > page up",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "i" },
+                "to": [{ "key_code": "page_up", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "df held + u > page down",
+                "conditions": [
+                  { "name": "df_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "u" },
+                "to": [{ "key_code": "page_down", "modifiers": [] }],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
       },
       "devices": [
         {
@@ -222,4 +354,3 @@
     }
   ]
 }
-
