@@ -282,6 +282,114 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Hold x+c to activate numpad with home row",
+            "manipulators": [
+              {
+                "description": "Hold x + c > Numbers modifier",
+                "from": {
+                  "simultaneous": [{ "key_code": "x" }, { "key_code": "c" }]
+                },
+                "to": [
+                  { "set_variable": { "name": "xc_held_down", "value": 1 } }
+                ],
+                "to_after_key_up": [
+                  { "set_variable": { "name": "xc_held_down", "value": 0 } }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + u > 1",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "u" },
+                "to": [{ "key_code": "1", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + i > 2",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "i" },
+                "to": [{ "key_code": "2", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + o > 3",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "o" },
+                "to": [{ "key_code": "3", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + j > 4",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "j" },
+                "to": [{ "key_code": "4", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + k > 5",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "k" },
+                "to": [{ "key_code": "5", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + l > 6",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "l" },
+                "to": [{ "key_code": "6", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + m > 7",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "m" },
+                "to": [{ "key_code": "7", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + comma > 8",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "comma" },
+                "to": [{ "key_code": "8", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + period > 9",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "period" },
+                "to": [{ "key_code": "9", "modifiers": [] }],
+                "type": "basic"
+              },
+              {
+                "description": "xc held + semicolon > 0",
+                "conditions": [
+                  { "name": "xc_held_down", "type": "variable_if", "value": 1 }
+                ],
+                "from": { "key_code": "semicolon" },
+                "to": [{ "key_code": "0", "modifiers": [] }],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
