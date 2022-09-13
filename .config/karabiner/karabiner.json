@@ -390,6 +390,21 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Hold j+; > right option",
+            "manipulators": [
+              {
+                "from": {
+                  "simultaneous": [
+                    { "key_code": "j" },
+                    { "key_code": "semicolon" }
+                  ]
+                },
+                "to": { "key_code": "right_option" },
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
