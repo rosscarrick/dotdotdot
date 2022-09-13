@@ -1,3 +1,23 @@
+# Get git branch and file changes
+function git_stats()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    diffs=$(git diff --shortstat)
+    files_changed=${diffs[(ws:,:)1]}
+    echo '%B%F{cyan}('$branch'%f%F{red}'$files_changed'%f%F{cyan})%f%b'
+  fi
+}
+
+# Enable substitution in the prompt.
+setopt prompt_subst
+
+current_dir='%B%2/%b'
+PROMPT='$current_dir $(git_stats) > '
+
 export EDITOR='vim'
 
 alias g=git
