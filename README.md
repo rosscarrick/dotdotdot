@@ -26,3 +26,5 @@ c checkout
 ### Set up Vim
 - [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim) at `$HOME/.nvim`
 - [Install Vim Plug](https://github.com/junegunn/vim-plug)
+- [Install bat](https://github.com/sharkdp/bat)
+- [Install rigrep](https://github.com/BurntSushi/ripgrep#installation) 
