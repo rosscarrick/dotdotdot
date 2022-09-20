@@ -48,6 +48,8 @@ source ~/.config/nvim/plugin-config/fzf.vim
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'overcache/NeoSolarized'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 """""
