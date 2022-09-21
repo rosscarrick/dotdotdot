@@ -19,3 +19,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gj <Plug>(coc-diagnostic-next)
 nmap <silent> gk <Plug>(coc-diagnostic-prev)
+
+" Press enter to select completion suggestion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
