@@ -73,5 +73,8 @@ nnoremap <Leader>j <C-^>
 " Space+n go to next match
 nnoremap <Leader>n *
 
+" Space+b list Buffers
+nnoremap <Leader>b :Buffers<Cr>
+
 " Tab = toggle fold
 nnoremap <tab> za
