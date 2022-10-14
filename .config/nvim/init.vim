@@ -46,6 +46,7 @@ call plug#begin("~/.config/nvim/autoload")
 source ~/.config/nvim/plugin-config/coc.vim
 source ~/.config/nvim/plugin-config/fzf.vim
 source ~/.config/nvim/plugin-config/gitgutter.vim
+source ~/.config/nvim/plugin-config/git-blamer.vim
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'overcache/NeoSolarized'
