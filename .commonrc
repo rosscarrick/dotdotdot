@@ -23,6 +23,7 @@ PROMPT='$current_dir $(git_stats)$newline'
 export EDITOR='vim'
 
 alias g=git
+alias d=docker
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
