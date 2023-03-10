@@ -83,6 +83,9 @@ nnoremap <Leader>t :Lexplore <CR>
 " Space+b list Buffers
 nnoremap <Leader>b :Buffers<Cr>
 
+" Space+r init replace all in file
+nnoremap <Leader>r bye:%s///g<left><left><left>
+
 " Tab = toggle fold
 nnoremap <tab> za
 
