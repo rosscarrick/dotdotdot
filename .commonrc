@@ -29,6 +29,7 @@ alias vi='nvim'
 alias vim='vi'
 alias vimrc='vi ~/.config/nvim/init.vim'
 alias lal='ls -la'
+alias tx=tmux
 
 # Create hidden-config if missing
 if [ -f ~/.hidden-config ]; then
