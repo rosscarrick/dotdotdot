@@ -33,6 +33,7 @@ set sidescrolloff=8
 " netrw
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+let g:netrw_winsize = 25
 
 " Folding
 set foldmethod=indent
@@ -73,8 +74,15 @@ nnoremap <Leader>j <C-^>
 " Space+n go to next match
 nnoremap <Leader>n *
 
+" Space+c open tree at current file
+nnoremap <Leader>c :Lexplore %:p:h<CR>
+
+" Space+t open tree at working directory
+nnoremap <Leader>t :Lexplore <CR>
+
 " Space+b list Buffers
 nnoremap <Leader>b :Buffers<Cr>
 
 " Tab = toggle fold
 nnoremap <tab> za
+
