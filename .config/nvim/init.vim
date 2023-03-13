@@ -1,3 +1,5 @@
+let mapleader = " "
+
 syntax on
 set noerrorbells
 
@@ -33,7 +35,7 @@ set sidescrolloff=8
 " netrw
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-let g:netrw_winsize = 25
+let g:netrw_winsize = 20
 
 " Folding
 set foldmethod=indent
@@ -48,7 +50,7 @@ source ~/.config/nvim/plugin-config/coc.vim
 source ~/.config/nvim/plugin-config/fzf.vim
 source ~/.config/nvim/plugin-config/gitgutter.vim
 source ~/.config/nvim/plugin-config/git-blamer.vim
-Plug 'tpope/vim-fugitive'
+source ~/.config/nvim/plugin-config/vim-fugitive.vim
 Plug 'tpope/vim-commentary'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -63,8 +65,6 @@ colorscheme default
 """""
 """""
 """"" Mappings 
-let mapleader = " "
-
 " Double-space to save
 nnoremap <Leader><Leader> :w<Cr>
 
