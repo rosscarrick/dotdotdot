@@ -24,6 +24,7 @@ export EDITOR='vim'
 
 alias g=git
 alias d=docker
+alias y=yarn
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
