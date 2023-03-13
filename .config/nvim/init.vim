@@ -51,6 +51,7 @@ source ~/.config/nvim/plugin-config/fzf.vim
 source ~/.config/nvim/plugin-config/gitgutter.vim
 source ~/.config/nvim/plugin-config/git-blamer.vim
 source ~/.config/nvim/plugin-config/vim-fugitive.vim
+Plug 'overcache/NeoSolarized'
 Plug 'tpope/vim-commentary'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -59,8 +60,8 @@ call plug#end()
 """""
 """""
 """"" Colour
-" set termguicolors
-colorscheme default
+set termguicolors
+colorscheme NeoSolarized
 
 """""
 """""
