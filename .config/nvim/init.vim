@@ -76,10 +76,10 @@ nnoremap <Leader>j <C-^>
 nnoremap <Leader>n *
 
 " Space+c open tree at current file
-nnoremap <Leader>c :Lexplore %:p:h<CR><C-w>r
+nnoremap <Leader>c :Lexplore %:p:h<CR>
 
 " Space+t open tree at working directory
-nnoremap <Leader>t :Lexplore <CR><C-w>r
+nnoremap <Leader>t :Lexplore <CR>
 
 " Space+b list Buffers
 nnoremap <Leader>b :Buffers<Cr>
