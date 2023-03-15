@@ -95,3 +95,9 @@ nnoremap L :bn<CR>
 " H = prev buffer
 nnoremap H :bp<CR>
 
+" Control+j = down 5
+nnoremap <C-j> 5j
+
+" Control+k = up 5
+nnoremap <C-k> 5k
+
