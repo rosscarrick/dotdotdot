@@ -89,3 +89,9 @@ nnoremap <Leader>r bye:%s///g<left><left><left>
 " Tab = toggle fold
 nnoremap <tab> za
 
+" L = next buffer
+nnoremap L :bn<CR>
+
+" H = prev buffer
+nnoremap H :bp<CR>
+
