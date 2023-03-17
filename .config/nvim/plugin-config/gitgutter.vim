@@ -1,5 +1,5 @@
 Plug 'airblade/vim-gitgutter'
 
-nmap [j <Plug>(GitGutterNextHunk)
-nmap [k <Plug>(GitGutterPrevHunk)
-nmap [= <Plug>(GitGutterPreviewHunk)
+nnoremap [] <Plug>(GitGutterNextHunk)
+nnoremap [[ <Plug>(GitGutterPrevHunk)
+nnoremap [= <Plug>(GitGutterPreviewHunk)
