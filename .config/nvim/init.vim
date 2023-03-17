@@ -29,7 +29,7 @@ set incsearch
 set nohlsearch
 
 " Scroll
-set scrolloff=25
+set scrolloff=10
 set sidescrolloff=8
 
 " netrw
@@ -84,21 +84,21 @@ nnoremap <Leader>t :Lexplore <CR>
 " Space+b list Buffers
 nnoremap <Leader>b :Buffers<Cr>
 
+" Right arrow = next buffer
+nnoremap <Right> :bn<CR>
+
+" Left arrow = prev buffer
+nnoremap <Left> :bn<CR>
+
 " Space+r init replace all in file
 nnoremap <Leader>r bye:%s///g<left><left><left>
 
 " Tab = toggle fold
 nnoremap <tab> za
 
-" L = next buffer
-nnoremap L :bn<CR>
+" Down arrow = down 5
+nnoremap <Down> 5j
 
-" H = prev buffer
-nnoremap H :bp<CR>
-
-" Control+j = down 5
-nnoremap <C-j> 5j
-
-" Control+k = up 5
-nnoremap <C-k> 5k
+" Up arrow = up 5
+nnoremap <Up> 5k
 
