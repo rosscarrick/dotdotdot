@@ -54,13 +54,14 @@ source ~/.config/nvim/plugin-config/vim-fugitive.vim
 Plug 'tpope/vim-commentary'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'cormacrelf/vim-colors-github'
 call plug#end()
 
 """""
 """""
 """"" Colour
 set termguicolors
-colorscheme default
+colorscheme github
 
 """""
 """""
