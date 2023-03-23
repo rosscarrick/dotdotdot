@@ -1,4 +1,3 @@
-nnoremap ]] <Plug>(copilot-next)
-nnoremap ][ <Plug>(copilot-previous)
-nnoremap ]$ <Plug>(copilot-suggest)
+inoremap <C-s> <Plug>(copilot-next)
+inoremap <C-S> <Plug>(copilot-previous)
 
