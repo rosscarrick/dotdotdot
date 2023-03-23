@@ -51,6 +51,7 @@ source ~/.config/nvim/plugin-config/fzf.vim
 source ~/.config/nvim/plugin-config/gitgutter.vim
 source ~/.config/nvim/plugin-config/git-blamer.vim
 source ~/.config/nvim/plugin-config/vim-fugitive.vim
+source ~/.config/nvim/plugin-config/copilot.vim
 Plug 'tpope/vim-commentary'
 Plug 'cormacrelf/vim-colors-github'
 call plug#end()
