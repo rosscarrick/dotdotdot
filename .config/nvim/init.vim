@@ -60,7 +60,6 @@ call plug#end()
 """""
 """"" Colour
 set termguicolors
-colorscheme github
 hi Normal guibg=NONE ctermbg=NONE
 hi clear LineNr
 
