@@ -3,6 +3,7 @@ let mapleader = " "
 syntax on
 set noerrorbells
 set showmatch
+set guicursor=a:block
 
 " Tabs
 set expandtab
