@@ -90,7 +90,7 @@ nnoremap <Right> :bn<CR>
 nnoremap <Left> :bn<CR>
 
 " Space+r init replace all in file
-nnoremap <Leader>r bye:%s///g<left><left><left>
+nnoremap <Leader>r yiw:%s///g<left><left><left>
 
 " Tab = toggle fold
 nnoremap <tab> za
