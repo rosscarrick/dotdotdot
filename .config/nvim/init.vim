@@ -102,3 +102,6 @@ nnoremap <Down> 5j
 " Up arrow = up 5
 nnoremap <Up> 5k
 
+" Ctl+e = turn word under cursor into html tag
+inoremap <C-e> <esc>ciw<<C-o>p></<C-o>p><esc>F<i
+
