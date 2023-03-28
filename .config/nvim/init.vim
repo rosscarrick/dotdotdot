@@ -2,6 +2,7 @@ let mapleader = " "
 
 syntax on
 set noerrorbells
+set showmatch
 
 " Tabs
 set expandtab
