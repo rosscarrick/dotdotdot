@@ -6,7 +6,6 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-prettier',
   \ 'coc-json',
-  \ 'coc-snippets',
   \ 'coc-css']
 
 " Don't pass messages to |ins-completion-menu|.
