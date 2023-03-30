@@ -62,8 +62,9 @@ call plug#end()
 """""
 """"" Colour
 set termguicolors
-hi Normal guibg=NONE ctermbg=NONE
-hi clear LineNr
+set background=dark
+colorscheme darkblue
+
 
 """""
 """""
