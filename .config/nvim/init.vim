@@ -1,9 +1,7 @@
 let mapleader = " "
 
-syntax on
 set noerrorbells
 set showmatch
-set guicursor=a:block
 
 " Tabs
 set expandtab
@@ -47,7 +45,6 @@ set foldlevelstart=99
 """""
 """""
 """"" Plugins
-
 call plug#begin("~/.config/nvim/autoload")
 source ~/.config/nvim/plugin-config/coc.vim
 source ~/.config/nvim/plugin-config/fzf.vim
@@ -60,11 +57,34 @@ call plug#end()
 
 """""
 """""
-""""" Colour
-set termguicolors
-set background=dark
-colorscheme darkblue
+""""" Theme
+syntax on
+set bg=light
 
+" Handy map to chek which highlight group is under the cursor
+nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+hi Normal ctermbg=255 ctermfg=232
+hi Comment ctermbg=NONE ctermfg=244
+hi LineNr ctermbg=NONE ctermfg=232
+hi LineNrAbove ctermbg=NONE ctermfg=244
+hi LineNrBelow ctermbg=NONE ctermfg=244
+hi SignColumn ctermbg=NONE ctermfg=244
+hi String ctermbg=NONE ctermfg=57
+hi Number ctermbg=NONE ctermfg=22
+hi Boolean ctermbg=NONE ctermfg=53
+hi Statement ctermbg=NONE ctermfg=88
+hi Type ctermbg=NONE ctermfg=232
+hi PreProc ctermbg=NONE ctermfg=17
+hi Special ctermbg=NONE ctermfg=232
+hi Identifier ctermbg=NONE ctermfg=88
+hi Pmenu ctermbg=254 ctermfg=244
+hi MatchParen ctermbg=88 ctermfg=231
+hi ErrorMsg ctermbg=224 ctermfg=1
+hi DiffAdd ctermbg=NONE ctermfg=22
+hi DiffDelete ctermbg=NONE ctermfg=1
 
 """""
 """""
