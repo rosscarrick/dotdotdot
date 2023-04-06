@@ -9,14 +9,14 @@ function git_stats()
   else
     diffs=$(git diff --shortstat)
     files_changed=${diffs[(ws:,:)1]}
-    echo '%B%F{cyan}('$branch'%f%F{red}'$files_changed'%f%F{cyan})%f%b'
+    echo '%B%F{blue}('$branch'%f%F{red}'$files_changed'%f%F{blue})%f%b'
   fi
 }
 
 # Enable substitution in the prompt.
 setopt prompt_subst
 
-current_dir='%B%2/%b'
+current_dir='%F{blue}%B%2/%b%f'
 newline=$'\n'
 PROMPT='$current_dir $(git_stats)$newline'
 
