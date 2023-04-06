@@ -1,5 +1,6 @@
 let mapleader = " "
 
+set nocompatible
 set noerrorbells
 set showmatch
 
@@ -83,6 +84,7 @@ hi Identifier ctermbg=NONE ctermfg=88
 hi Pmenu ctermbg=254 ctermfg=244
 hi MatchParen ctermbg=88 ctermfg=231
 hi ErrorMsg ctermbg=224 ctermfg=1
+hi WarningMsg ctermbg=223 ctermfg=172
 hi DiffAdd ctermbg=NONE ctermfg=22
 hi DiffDelete ctermbg=NONE ctermfg=1
 
@@ -103,9 +105,6 @@ nnoremap <Leader>c :Lexplore %:p:h<CR>
 
 " Space+t open tree at working directory
 nnoremap <Leader>t :Lexplore <CR>
-
-" Space+b list Buffers
-nnoremap <Leader>b :Buffers<Cr>
 
 " Right arrow = next buffer
 nnoremap <Right> :bn<CR>
