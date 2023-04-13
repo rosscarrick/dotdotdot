@@ -110,7 +110,7 @@ nnoremap <Leader>t :Lexplore <CR>
 nnoremap <Right> :bn<CR>
 
 " Left arrow = prev buffer
-nnoremap <Left> :bn<CR>
+nnoremap <Left> :bp<CR>
 
 " Space+r init replace all in file
 nnoremap <Leader>r yiw:%s///g<left><left><left>
