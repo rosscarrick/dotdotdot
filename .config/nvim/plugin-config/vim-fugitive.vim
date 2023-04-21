@@ -1,5 +1,5 @@
 Plug 'tpope/vim-fugitive'
 
-nnoremap <Leader>gs :Ge :<Cr>
-nnoremap <Leader>gg :G 
+nnoremap <Leader>gg :Ge :<Cr>
+nnoremap <Leader>gc :G 
 
