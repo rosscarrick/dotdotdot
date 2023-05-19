@@ -16,7 +16,6 @@ set smartindent
 set number
 set relativenumber
 set nowrap
-set cmdheight=2
 
 " Buffers
 set noswapfile
