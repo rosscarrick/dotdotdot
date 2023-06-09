@@ -30,6 +30,7 @@ alias y=yarn
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
+alias vv='vi .'
 alias vimrc='vi ~/.config/nvim/init.vim'
 alias lal='ls -la'
 alias tx=tmux
