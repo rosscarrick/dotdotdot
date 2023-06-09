@@ -1,5 +1,4 @@
 let mapleader = " "
-
 set nocompatible
 set noerrorbells
 set showmatch
@@ -51,8 +50,9 @@ source ~/.config/nvim/plugin-config/fzf.vim
 source ~/.config/nvim/plugin-config/gitgutter.vim
 source ~/.config/nvim/plugin-config/git-blamer.vim
 source ~/.config/nvim/plugin-config/vim-fugitive.vim
-source ~/.config/nvim/plugin-config/copilot.vim
 Plug 'tpope/vim-commentary'
+Plug 'pangloss/vim-javascript'
+source ~/.config/nvim/plugin-config/copilot.vim
 call plug#end()
 
 """""
@@ -67,12 +67,13 @@ nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
+hi CopilotSuggestion ctermbg=22 ctermfg=46
 " hi Normal ctermbg=255 ctermfg=232
 hi Comment ctermbg=NONE ctermfg=244
-" hi LineNr ctermbg=NONE ctermfg=232
+hi LineNr ctermbg=NONE ctermfg=15
 hi LineNrAbove ctermbg=NONE ctermfg=244
 hi LineNrBelow ctermbg=NONE ctermfg=244
-" hi SignColumn ctermbg=NONE ctermfg=244
+hi SignColumn ctermbg=NONE ctermfg=244
 " hi String ctermbg=NONE ctermfg=57
 " hi Number ctermbg=NONE ctermfg=22
 " hi Boolean ctermbg=NONE ctermfg=53
