@@ -9,14 +9,14 @@ function git_stats()
   else
     diffs=$(git diff --shortstat)
     files_changed=${diffs[(ws:,:)1]}
-    echo '%B%F{blue}('$branch'%f%F{red}'$files_changed'%f%F{blue})%f%b'
+    echo '%B%F{yellow}('$branch'%f%F{red}'$files_changed'%f%F{yellow})%f%b'
   fi
 }
 
 # Enable substitution in the prompt.
 setopt prompt_subst
 
-current_dir='%F{blue}%B%2/%b%f'
+current_dir='%F{white}%B%2/%b%f'
 newline=$'\n'
 PROMPT='$current_dir $(git_stats)$newline'
 
@@ -25,6 +25,7 @@ export EDITOR='vim'
 alias notes='cd ~/.notes && vi .'
 alias g=git
 alias d=docker
+alias k=kubectl
 alias y=yarn
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
