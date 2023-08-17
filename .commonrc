@@ -9,7 +9,7 @@ function git_stats()
   else
     diffs=$(git diff --shortstat)
     files_changed=${diffs[(ws:,:)1]}
-    echo '%B%F{yellow}('$branch'%f%F{red}'$files_changed'%f%F{yellow})%f%b'
+    echo '%B%F{blue}('$branch'%f%F{red}'$files_changed'%f%F{blue})%f%b'
   fi
 }
 

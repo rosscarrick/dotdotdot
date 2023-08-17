@@ -34,14 +34,13 @@ set sidescrolloff=8
 " netrw
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-let g:netrw_winsize = 20
+let g:netrw_winsize = 30
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " Folding
 set foldmethod=indent
 set foldlevelstart=99
 
-"""""
 """""
 """"" Plugins
 call plug#begin("~/.config/nvim/autoload")
@@ -67,27 +66,11 @@ nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-hi CopilotSuggestion ctermbg=22 ctermfg=46
-" hi Normal ctermbg=255 ctermfg=232
 hi Comment ctermbg=NONE ctermfg=244
-hi LineNr ctermbg=NONE ctermfg=15
 hi LineNrAbove ctermbg=NONE ctermfg=244
 hi LineNrBelow ctermbg=NONE ctermfg=244
-hi SignColumn ctermbg=NONE ctermfg=244
-" hi String ctermbg=NONE ctermfg=57
-" hi Number ctermbg=NONE ctermfg=22
-" hi Boolean ctermbg=NONE ctermfg=53
-" hi Statement ctermbg=NONE ctermfg=88
-" hi Type ctermbg=NONE ctermfg=232
-" hi PreProc ctermbg=NONE ctermfg=17
-" hi Special ctermbg=NONE ctermfg=232
-" hi Identifier ctermbg=NONE ctermfg=88
-" hi Pmenu ctermbg=254 ctermfg=244
-" hi MatchParen ctermbg=88 ctermfg=231
-" hi ErrorMsg ctermbg=224 ctermfg=1
-" hi WarningMsg ctermbg=223 ctermfg=172
-" hi DiffAdd ctermbg=NONE ctermfg=22
-" hi DiffDelete ctermbg=NONE ctermfg=1
+
+hi CopilotSuggestion ctermbg=59 ctermfg=46
 
 """""
 """""
