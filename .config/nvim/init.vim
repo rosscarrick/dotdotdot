@@ -85,16 +85,22 @@ nnoremap <Leader>j <C-^>
 nnoremap <Leader>n *
 
 " Space+c open tree at current file
-nnoremap <Leader>c :Lexplore %:p:h<CR>
+nnoremap <Leader>c :Lexplore! %:p:h<CR>
 
 " Space+t open tree at working directory
-nnoremap <Leader>t :Lexplore <CR>
+nnoremap <Leader>x :Lexplore! <CR>
 
-" Right arrow = next buffer
-nnoremap <Right> :bn<CR>
+" Space+t open new tab
+nnoremap <Leader>t :Texplore <CR>
 
-" Left arrow = prev buffer
-nnoremap <Left> :bp<CR>
+" Space+t open buffer in new tab
+nnoremap <Leader>s :tab split <CR>
+
+" Right arrow = next tab
+nnoremap <Right> :tabprevious<CR>
+
+" Left arrow = prev tab
+nnoremap <Left> :tabnext<CR>
 
 " Space+r init replace all in file
 nnoremap <Leader>r yiw:%s///g<left><left><left>

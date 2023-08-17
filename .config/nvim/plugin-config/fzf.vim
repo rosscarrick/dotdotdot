@@ -5,7 +5,7 @@ nnoremap <Leader>f :Rg <Cr>
 nnoremap <Leader>p :GFiles <Cr>
 nnoremap <Leader>b :Buffers<Cr>
 
-let g:fzf_preview_window = ''
+" let g:fzf_preview_window = ''
 
 " Set preview window colors
 let g:fzf_colors =
@@ -25,3 +25,4 @@ let g:fzf_colors =
 
 " Don't include file names when using :Rg
 command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
