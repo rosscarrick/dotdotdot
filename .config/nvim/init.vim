@@ -97,10 +97,10 @@ nnoremap <Leader>t :Texplore <CR>
 nnoremap <Leader>s :tab split <CR>
 
 " Right arrow = next tab
-nnoremap <Right> :tabprevious<CR>
+nnoremap <Right> :tabnext +1<CR>
 
 " Left arrow = prev tab
-nnoremap <Left> :tabnext<CR>
+nnoremap <Left> :tabnext -1<CR>
 
 " Space+r init replace all in file
 nnoremap <Leader>r yiw:%s///g<left><left><left>
