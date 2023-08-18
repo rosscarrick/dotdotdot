@@ -34,7 +34,7 @@ set sidescrolloff=8
 " netrw
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-let g:netrw_winsize = 30
+let g:netrw_winsize = 45
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 " Folding
