@@ -1,11 +1,8 @@
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-nnoremap <Leader>f :Rg <Cr>
-nnoremap <Leader>p :GFiles <Cr>
-nnoremap <Leader>b :Buffers<Cr>
-
-" let g:fzf_preview_window = ''
+let g:fzf_preview_window = ['up:50%']
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
 " Set preview window colors
 let g:fzf_colors =
@@ -23,6 +20,6 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" Don't include file names when using :Rg
-command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
-
+nnoremap <Leader>f :Rg <Cr>
+nnoremap <Leader>p :GFiles <Cr>
+nnoremap <Leader>b :Buffers<Cr>
