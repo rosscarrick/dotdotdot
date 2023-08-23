@@ -66,11 +66,26 @@ nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-hi Comment ctermbg=NONE ctermfg=244
+hi Comment ctermbg=NONE ctermfg=240
 hi LineNrAbove ctermbg=NONE ctermfg=244
 hi LineNrBelow ctermbg=NONE ctermfg=244
+hi SignColumn ctermbg=NONE
+hi Visual ctermbg=238
+hi Folded ctermbg=233 ctermfg=240
 
-hi CopilotSuggestion ctermbg=59 ctermfg=46
+hi CopilotSuggestion ctermbg=NONE ctermfg=64
+
+hi CocMenuSel ctermbg=11 ctermfg=0
+hi CocPumSearch ctermbg=NONE ctermfg=11
+hi CocWarningHighlight ctermbg=172 ctermfg=white
+hi CocErrorHighlight ctermbg=196 ctermfg=white
+hi CocErrorSign ctermbg=NONE ctermfg=196
+hi CocWarningSign ctermbg=NONE ctermfg=172
+hi CocUnusedHighlight ctermbg=NONE ctermfg=196
+
+hi GitGutterAdd ctermfg=82
+hi GitGutterChange ctermfg=242
+hi GitGutterDelete ctermfg=160
 
 """""
 """""
