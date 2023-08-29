@@ -21,3 +21,6 @@ nmap <silent> gk <Plug>(coc-diagnostic-prev)
 
 " Press enter to select completion suggestion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" Show docs
+nnoremap <silent> <leader>d :call CocActionAsync('doHover')<CR>
