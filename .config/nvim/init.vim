@@ -57,35 +57,87 @@ call plug#end()
 """""
 """""
 """"" Theme
-syntax on
-set bg=dark
-colorscheme default
-
 " Handy map to chek which highlight group is under the cursor
 nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-hi Comment ctermbg=NONE ctermfg=240
-hi LineNrAbove ctermbg=NONE ctermfg=244
-hi LineNrBelow ctermbg=NONE ctermfg=244
+syntax on
+set bg=dark
+colorscheme default
+
+hi Comment ctermfg=240
+hi Folded ctermfg=241 ctermbg=NONE
+hi Type ctermfg=15
+hi vimGroup ctermfg=251
+hi PreProc ctermfg=251
+hi Number ctermfg=153
+hi String ctermfg=79
+hi Statement ctermfg=181
+hi LineNr ctermfg=15
+hi LineNrAbove ctermfg=237
+hi LineNrBelow ctermfg=237
+hi Special ctermfg=146
+hi Identifier ctermfg=15
+hi MatchParen ctermfg=171 ctermbg=NONE
 hi SignColumn ctermbg=NONE
-hi Visual ctermbg=238
-hi Folded ctermbg=233 ctermfg=240
+hi Constant ctermfg=182
+hi Visual ctermbg=15 ctermfg=0
+hi TabLineSel ctermbg=79 ctermfg=0
+hi TabLine ctermbg=NONE ctermfg=241
+hi TabLineFill ctermbg=NONE
 
-hi CopilotSuggestion ctermbg=NONE ctermfg=64
+hi jsStorageClass ctermfg=250
+hi jsFunction ctermfg=181
+hi jsArrowFunction ctermfg=250
+hi jsFuncBraces ctermfg=250
+hi jsFuncParens ctermfg=250
+hi jsFuncBlock ctermfg=250
+hi typescriptBraces ctermfg=250
+hi typescriptParens ctermfg=250
+hi typescriptArrowFunc ctermfg=250
+hi typescriptVariable ctermfg=251
+hi typescriptVariableDeclaration ctermfg=15
+hi typescriptDestructureVariable ctermfg=15
+hi typescriptCall ctermfg=15
+hi tsxAttrib ctermfg=250
+hi typescriptBinaryOp ctermfg=250
+hi cssBraces ctermfg=250
+hi vimHiKeyList ctermfg=250
+hi htmlTagName ctermfg=110
 
-hi CocMenuSel ctermbg=11 ctermfg=0
-hi CocPumSearch ctermbg=NONE ctermfg=11
-hi CocWarningHighlight ctermbg=172 ctermfg=white
-hi CocErrorHighlight ctermbg=196 ctermfg=white
-hi CocErrorSign ctermbg=NONE ctermfg=196
+hi CopilotSuggestion ctermbg=NONE ctermfg=118
+
+hi CocMenuSel ctermbg=153 ctermfg=0
+hi CocPumSearch ctermbg=NONE ctermfg=153
+
+hi CocWarningHighlight ctermbg=172 ctermfg=15
+hi CocErrorHighlight ctermbg=167 ctermfg=15
+hi CocErrorSign ctermbg=NONE ctermfg=161
 hi CocWarningSign ctermbg=NONE ctermfg=172
-hi CocUnusedHighlight ctermbg=NONE ctermfg=196
+hi CocUnusedHighlight ctermbg=NONE ctermfg=167
 
-hi GitGutterAdd ctermfg=82
-hi GitGutterChange ctermfg=242
-hi GitGutterDelete ctermfg=160
+hi GitGutterAdd ctermfg=79
+hi GitGutterChange ctermfg=75
+hi GitGutterDelete ctermfg=161
+
+hi fugitiveUnstagedHeading ctermfg=75
+hi fugitiveUnstagedModifier ctermfg=75
+hi fugitiveUntrackedHeading ctermfg=181
+hi fugitiveUntrackedModifier ctermfg=181
+hi fugitiveStagedHeading ctermfg=79
+hi fugitiveStagedModifier ctermfg=79
+hi fugitiveHunk ctermfg=240
+hi diffLine ctermfg=75
+hi fugitiveHeading ctermfg=161
+hi fugitiveHeader ctermfg=181
+hi fugitiveHash ctermfg=161
+
+" NetRW
+hi Directory ctermfg=79
+hi netrwPlain ctermfg=15
+hi netrwTreeBar ctermfg=240
+hi netrwClassify ctermfg=240
 
 """""
 """""
@@ -129,6 +181,12 @@ nnoremap <Down> 5j
 " Up arrow = up 5
 nnoremap <Up> 5k
 
-" Ctl+e = turn word under cursor into html tag
-inoremap <C-e> <esc>ciw<<C-o>p></<C-o>p><esc>F<i
+"
+" Snippets
+
+" turn word under cursor into html tag
+inoremap <C-s>e <esc>ciw<<C-o>p></<C-o>p><esc>F<i
+
+" console.log()
+inoremap <C-s>l console.log()<left>
 
