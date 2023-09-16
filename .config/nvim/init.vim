@@ -75,17 +75,19 @@ hi Number ctermfg=153
 hi String ctermfg=79
 hi Statement ctermfg=181
 hi LineNr ctermfg=15
-hi LineNrAbove ctermfg=237
-hi LineNrBelow ctermfg=237
+hi LineNrAbove ctermfg=240
+hi LineNrBelow ctermfg=240
 hi Special ctermfg=146
 hi Identifier ctermfg=15
 hi MatchParen ctermfg=171 ctermbg=NONE
 hi SignColumn ctermbg=NONE
 hi Constant ctermfg=182
 hi Visual ctermbg=15 ctermfg=0
-hi TabLineSel ctermbg=79 ctermfg=0
+hi TabLineSel ctermbg=79 ctermfg=22
 hi TabLine ctermbg=NONE ctermfg=241
-hi TabLineFill ctermbg=NONE
+hi TabLineFill ctermbg=NONE ctermfg=0
+hi StatusLine ctermbg=79 ctermfg=0
+hi StatusLineNC ctermbg=NONE ctermfg=15
 
 hi jsStorageClass ctermfg=250
 hi jsFunction ctermfg=181
@@ -93,13 +95,19 @@ hi jsArrowFunction ctermfg=250
 hi jsFuncBraces ctermfg=250
 hi jsFuncParens ctermfg=250
 hi jsFuncBlock ctermfg=250
-hi typescriptBraces ctermfg=250
+hi jsObjectKey ctermfg=250
+hi jsObjectBraces ctermfg=146
+hi jsDot ctermfg=250
+hi jsObjectColon ctermfg=250
+hi typescriptBlock ctermfg=181
+hi typescriptBraces ctermfg=146
 hi typescriptParens ctermfg=250
 hi typescriptArrowFunc ctermfg=250
 hi typescriptVariable ctermfg=251
 hi typescriptVariableDeclaration ctermfg=15
 hi typescriptDestructureVariable ctermfg=15
 hi typescriptCall ctermfg=15
+hi typescriptAsyncFuncKeyword ctermfg=146
 hi tsxAttrib ctermfg=250
 hi typescriptBinaryOp ctermfg=250
 hi cssBraces ctermfg=250
