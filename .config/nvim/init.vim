@@ -41,6 +41,7 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 set foldmethod=indent
 set foldlevelstart=99
 
+
 """""
 """"" Plugins
 call plug#begin("~/.config/nvim/autoload")
@@ -73,7 +74,7 @@ hi vimGroup ctermfg=251
 hi PreProc ctermfg=251
 hi Number ctermfg=153
 hi String ctermfg=79
-hi Statement ctermfg=181
+hi Statement ctermfg=183
 hi LineNr ctermfg=15
 hi LineNrAbove ctermfg=240
 hi LineNrBelow ctermfg=240
@@ -81,7 +82,7 @@ hi Special ctermfg=146
 hi Identifier ctermfg=15
 hi MatchParen ctermfg=171 ctermbg=NONE
 hi SignColumn ctermbg=NONE
-hi Constant ctermfg=182
+hi Constant ctermfg=183
 hi Visual ctermbg=15 ctermfg=0
 hi TabLineSel ctermbg=79 ctermfg=22
 hi TabLine ctermbg=NONE ctermfg=241
