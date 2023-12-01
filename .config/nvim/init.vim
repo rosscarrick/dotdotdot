@@ -95,6 +95,7 @@ hi jsFunction ctermfg=181
 hi jsArrowFunction ctermfg=250
 hi jsFuncBraces ctermfg=250
 hi jsFuncParens ctermfg=250
+hi jsParens ctermfg=250
 hi jsFuncBlock ctermfg=250
 hi jsObjectKey ctermfg=250
 hi jsObjectBraces ctermfg=146
