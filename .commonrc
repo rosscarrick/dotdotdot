@@ -47,6 +47,7 @@ alias g=git
 alias d=docker
 alias k=kubectl
 alias y=yarn
+alias pm=pnpm
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
@@ -56,6 +57,7 @@ alias lal='ls -la'
 alias tx=tmux
 alias txn='tmux new -s'
 alias txa='tmux attach -t'
+alias rmnm='rm -rf node_modules'
 
 # Create hidden-config if missing
 if [ -f ~/.hidden-config ]; then
