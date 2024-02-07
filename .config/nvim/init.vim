@@ -68,7 +68,7 @@ set bg=dark
 colorscheme default
 
 hi Comment ctermfg=240
-hi Folded ctermfg=241 ctermbg=NONE
+hi Folded ctermfg=237 ctermbg=NONE
 hi Type ctermfg=15
 hi vimGroup ctermfg=251
 hi PreProc ctermfg=251
