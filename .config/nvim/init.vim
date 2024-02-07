@@ -90,6 +90,8 @@ hi TabLineFill ctermbg=NONE ctermfg=0
 hi StatusLine ctermbg=79 ctermfg=0
 hi StatusLineNC ctermbg=NONE ctermfg=15
 hi EndOfBuffer ctermfg=232
+hi Pmenu ctermbg=235 ctermfg=245
+hi PmenuSel ctermbg=237 ctermfg=79
 
 hi jsStorageClass ctermfg=250
 hi jsFunction ctermfg=181
