@@ -41,6 +41,10 @@ let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 set foldmethod=indent
 set foldlevelstart=99
 
+" Spelling
+set spell
+set spelllang=en_gb
+
 
 """""
 """"" Plugins
@@ -58,7 +62,7 @@ call plug#end()
 """""
 """""
 """"" Theme
-" Handy map to chek which highlight group is under the cursor
+" Handy map to check which highlight group is under the cursor
 nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
@@ -66,6 +70,7 @@ nnoremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 syntax on
 set bg=dark
 colorscheme default
+
 
 hi Comment ctermfg=240
 hi Folded ctermfg=237 ctermbg=NONE
@@ -92,6 +97,7 @@ hi StatusLineNC ctermbg=NONE ctermfg=15
 hi EndOfBuffer ctermfg=232
 hi Pmenu ctermbg=235 ctermfg=245
 hi PmenuSel ctermbg=237 ctermfg=79
+hi SpellBad ctermbg=52  cterm=underline
 
 hi jsStorageClass ctermfg=250
 hi jsFunction ctermfg=181
