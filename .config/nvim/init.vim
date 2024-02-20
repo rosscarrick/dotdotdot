@@ -241,6 +241,8 @@ hi fugitiveHash ctermfg=242
 
 hi jsonQuote ctermfg=242
 
+hi shVarAssign ctermfg=242
+
 " Subtlest - 238
 hi Comment ctermfg=238
 hi LineNrAbove ctermfg=238
