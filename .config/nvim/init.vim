@@ -71,95 +71,238 @@ syntax on
 set bg=dark
 colorscheme default
 
+" black=233
+" white=15
+" subtle=245
+" subtler=242
+" subtlest=238
+" purple=183
+" green=79
+" red=161
+" orange=172
 
-hi Comment ctermfg=240
-hi Folded ctermfg=237 ctermbg=NONE
-hi Type ctermfg=15
-hi vimGroup ctermfg=251
-hi PreProc ctermfg=251
-hi Number ctermfg=153
-hi String ctermfg=79
-hi Statement ctermfg=183
-hi LineNr ctermfg=15
-hi LineNrAbove ctermfg=240
-hi LineNrBelow ctermfg=240
-hi Special ctermfg=146
-hi Identifier ctermfg=15
-hi MatchParen ctermfg=171 ctermbg=NONE
-hi SignColumn ctermbg=NONE
-hi Constant ctermfg=183
+" Modes
+hi Normal ctermbg=233 ctermfg=15
 hi Visual ctermbg=15 ctermfg=0
-hi TabLineSel ctermbg=79 ctermfg=22
-hi TabLine ctermbg=NONE ctermfg=241
-hi TabLineFill ctermbg=NONE ctermfg=0
-hi StatusLine ctermbg=79 ctermfg=0
-hi StatusLineNC ctermbg=NONE ctermfg=15
-hi EndOfBuffer ctermfg=232
-hi Pmenu ctermbg=235 ctermfg=245
-hi PmenuSel ctermbg=237 ctermfg=79
-hi SpellBad ctermbg=52  cterm=underline
 
-hi jsStorageClass ctermfg=250
-hi jsFunction ctermfg=181
-hi jsArrowFunction ctermfg=250
-hi jsFuncBraces ctermfg=250
-hi jsFuncParens ctermfg=250
-hi jsParens ctermfg=250
-hi jsFuncBlock ctermfg=250
-hi jsObjectKey ctermfg=250
-hi jsObjectBraces ctermfg=146
-hi jsDot ctermfg=250
-hi jsDestructuringBraces ctermfg=250
-hi jsDestructuringNoise ctermfg=250
-hi jsFuncCall ctermfg=183
-hi jsObjectColon ctermfg=250
-hi typescriptBlock ctermfg=181
-hi typescriptBraces ctermfg=146
-hi typescriptParens ctermfg=250
-hi typescriptArrowFunc ctermfg=250
-hi typescriptVariable ctermfg=251
-hi typescriptVariableDeclaration ctermfg=15
-hi typescriptDestructureVariable ctermfg=15
+" Black - 233
+hi TabLineFill ctermbg=NONE ctermfg=233
+hi EndOfBuffer ctermfg=233
+
+" White - 15
+hi LineNr ctermfg=15
+hi Type ctermfg=15
+hi Constant ctermfg=15
+hi Title ctermfg=15
+hi Keyword ctermfg=15
+
+hi vimFgBgAttrib ctermfg=15
+hi vimVar ctermfg=15
+hi vimOption ctermfg=15
+hi vimMapModKey ctermfg=15
+hi vimNotation ctermfg=15
+hi vimFuncName ctermfg=15
+
+hi netrwPlain ctermfg=15
+
+hi jsModuleKeyword ctermfg=15
+hi jsObjectKey ctermfg=15
+hi jsFuncCall ctermfg=15
+hi jsFuncName ctermfg=15
+hi jsObjectFuncName ctermfg=15
+hi jsDestructuringBlock ctermfg=15
+hi jsTemplateExpression ctermfg=15
+
+hi typescriptIdentifierName ctermfg=15
 hi typescriptCall ctermfg=15
-hi typescriptAsyncFuncKeyword ctermfg=146
-hi tsxAttrib ctermfg=250
-hi typescriptBinaryOp ctermfg=250
-hi cssBraces ctermfg=250
-hi vimHiKeyList ctermfg=250
-hi htmlTagName ctermfg=110
+hi typescriptMember ctermfg=15
+hi typescriptDestructureVariable ctermfg=15
+hi typescriptDOMDocProp ctermfg=15
+hi typescriptURLUtilsProp ctermfg=15
+hi typescriptArrayMethod ctermfg=15
+hi typescriptDOMDocMethod ctermfg=15
+hi typescriptInterfaceName ctermfg=15
+hi typescriptTestGlobal ctermfg=15
+hi typescriptAliasDeclaration ctermfg=15
+hi typescriptFuncName ctermfg=15
 
-hi CopilotSuggestion ctermbg=NONE ctermfg=118
+hi cssIdentifier ctermfg=15
+hi cssClassName ctermfg=15
+hi cssTagName ctermfg=15
+hi cssAttributeSelector ctermfg=15
+hi cssClassNameDot ctermfg=15
 
-hi CocMenuSel ctermbg=153 ctermfg=0
-hi CocPumSearch ctermbg=NONE ctermfg=153
+hi sassVariable ctermfg=15
+hi sassId ctermfg=15
+hi sassIdChar ctermfg=15
 
-hi CocWarningHighlight ctermbg=172 ctermfg=15
-hi CocErrorHighlight ctermbg=167 ctermfg=15
-hi CocErrorSign ctermbg=NONE ctermfg=161
-hi CocWarningSign ctermbg=NONE ctermfg=172
-hi CocUnusedHighlight ctermbg=NONE ctermfg=167
+hi htmlTagName ctermfg=15
+hi htmlTitle ctermfg=15
+hi htmlSpecialTagName ctermfg=15
+
+hi fugitiveSymbolicRef ctermfg=15
+hi gitcommitSummary ctermfg=15
+
+hi jsonKeyword ctermfg=15
+
+" Subtle - 245
+hi LineNrAbove ctermfg=245
+hi LineNrBelow ctermfg=245
+hi PreProc ctermfg=245
+hi Statement ctermfg=245
+hi Noise ctermfg=245
+hi DiagnosticInfo ctermfg=245
+
+hi vimBracket ctermfg=245
+hi vimHiKeyList ctermfg=245
+hi vimHiCtermFgBg ctermfg=245
+hi vimSetEqual ctermfg=245
+hi vimParenSep ctermfg=245
+hi vimContinue ctermfg=245
+
+hi jsExport ctermfg=245
+hi jsImport ctermfg=245
+hi jsFrom ctermfg=245
+hi jsModuleBraces ctermfg=245
+hi jsStorageClass ctermfg=245
+hi jsDestructuringBraces ctermfg=245
+hi jsOperator ctermfg=245
+hi jsBrackets ctermfg=245
+hi jsParens ctermfg=245
+hi jsObjectBraces ctermfg=245
+hi jsObjectKey ctermfg=245
+hi jsObjectColon ctermfg=245
+hi jsArrowFunction ctermfg=245
+hi jsThis ctermfg=245
+hi jsFunction ctermfg=245
+hi jsForAwait ctermfg=245
+
+hi typescriptImport ctermfg=245
+hi typescriptExport ctermfg=245
+hi typescriptBraces ctermfg=245
+hi typescriptVariable ctermfg=245
+hi typescriptAssignment ctermfg=245
+hi typescriptParens ctermfg=245
+hi typescriptTypeAnnotation ctermfg=245
+hi typescriptUnion ctermfg=245
+hi typescriptArrowFunc ctermfg=245
+hi typescriptAssign ctermfg=245
+hi typescriptDotNotation ctermfg=245
+hi typescriptObjectColon ctermfg=245
+hi typescriptObjectLabel ctermfg=245
+hi typescriptPredefinedType ctermfg=245
+hi typescriptAmbientDeclaration ctermfg=245
+hi typescriptTypeReference ctermfg=245
+hi typescriptOperator ctermfg=245
+hi typescriptAsyncFuncKeyword ctermfg=245
+hi typescriptFuncTypeArrow ctermfg=245
+hi typescriptKeywordOp ctermfg=245
+hi typescriptFuncKeyword ctermfg=245
+
+hi tsxCloseString ctermfg=245
+hi tsxAttrib ctermfg=245
+hi tsxEqual ctermfg=245
+
+hi htmlTag ctermfg=245
+hi htmlArg ctermfg=245
+hi htmlEndTag ctermfg=245
+
+hi cssBraces ctermfg=245
+hi cssBoxProp ctermfg=245
+hi cssBackgroundProp ctermfg=245
+hi cssPositioningProp ctermfg=245
+hi cssMediaProp ctermfg=245
+hi cssTextProp ctermfg=245
+hi cssSelectorOp ctermfg=245
+hi cssSelectorOp2 ctermfg=245
+hi cssFlexibleBoxProp ctermfg=245
+
+hi sassProperty ctermfg=245
+
+hi CocMenuSel ctermbg=245 ctermfg=15
+
+hi fugitiveUnstagedModifier ctermfg=245
+hi fugitiveUnstagedSection ctermfg=245
+
+hi jsonBraces ctermfg=245
+
+hi yamlBlockMappingKey ctermfg=245
+
+" Subltler - 242
+hi cssUnitDecorators ctermfg=242
+hi cssClassNameDot ctermfg=242
+
+hi netrwTreeBar ctermfg=242
+hi netrwClassify ctermfg=242
+
+hi fugitiveHash ctermfg=242
+
+hi jsonQuote ctermfg=242
+
+" Subtlest - 238
+hi Comment ctermfg=238
+hi LineNrAbove ctermfg=238
+hi LineNrBelow ctermfg=238
+hi Folded ctermfg=238 ctermbg=NONE
+hi TabLine ctermbg=NONE ctermfg=238
+hi Pmenu ctermbg=238 ctermfg=15
+
+hi GitGutterChange ctermfg=238
+
+" Purple - 183
+hi Number ctermfg=183
+hi MatchParen ctermfg=183 ctermbg=NONE
+hi Special ctermfg=183
+
+hi jsSpecial ctermfg=183
+
+hi cssPseudoClassId ctermfg=183
+
+hi jsonBoolean ctermfg=183
+
+" Green - 79
+hi String ctermfg=79
+hi StatusLine ctermbg=79 ctermfg=233
+hi TabLineSel ctermbg=79 ctermfg=22
+hi Directory ctermfg=79
+hi PmenuSel ctermbg=79 ctermfg=22
 
 hi GitGutterAdd ctermfg=79
-hi GitGutterChange ctermfg=75
-hi GitGutterDelete ctermfg=161
 
-hi fugitiveUnstagedHeading ctermfg=75
-hi fugitiveUnstagedModifier ctermfg=75
-hi fugitiveUntrackedHeading ctermfg=181
-hi fugitiveUntrackedModifier ctermfg=181
-hi fugitiveStagedHeading ctermfg=79
 hi fugitiveStagedModifier ctermfg=79
-hi fugitiveHunk ctermfg=240
-hi diffLine ctermfg=75
-hi fugitiveHeading ctermfg=161
-hi fugitiveHeader ctermfg=181
-hi fugitiveHash ctermfg=161
+hi fugitiveStagedHeading ctermfg=79
 
-" NetRW
-hi Directory ctermfg=79
-hi netrwPlain ctermfg=15
-hi netrwTreeBar ctermfg=240
-hi netrwClassify ctermfg=240
+hi CocPumSearch ctermbg=NONE ctermfg=79
+
+" Red - 161
+hi CocErrorSign ctermbg=NONE ctermfg=161
+
+hi jsRegexpCharClass ctermfg=161
+hi jsRegexpQuantifier ctermfg=161
+
+hi cssImportant ctermfg=161
+
+hi GitGutterDelete ctermfg=161
+hi fugitiveHeading ctermfg=161
+
+hi CocErrorHighlight ctermbg=NONE ctermfg=161
+
+" Orange - 172
+hi CocWarningSign ctermbg=NONE ctermfg=172
+hi CocWarningHighlight ctermbg=NONE ctermfg=172
+hi CocUnusedHighlight ctermbg=NONE ctermfg=172
+
+hi Todo ctermbg=NONE ctermfg=172
+
+" Misc
+hi StatusLineNC ctermbg=NONE ctermfg=15
+hi SpellBad ctermbg=NONE cterm=underline
+hi SpellCap ctermbg=NONE 
+hi SpellRare ctermbg=NONE
+hi SpellLocal ctermbg=NONE
+hi SignColumn ctermbg=NONE
+
+hi CopilotSuggestion ctermbg=234 ctermfg=238
 
 """""
 """""
