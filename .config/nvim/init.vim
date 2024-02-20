@@ -228,6 +228,8 @@ hi jsonBraces ctermfg=245
 
 hi yamlBlockMappingKey ctermfg=245
 
+hi shVariable ctermfg=245
+
 " Subltler - 242
 hi cssUnitDecorators ctermfg=242
 hi cssClassNameDot ctermfg=242
