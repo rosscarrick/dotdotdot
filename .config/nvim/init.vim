@@ -125,6 +125,7 @@ hi typescriptInterfaceName ctermfg=15
 hi typescriptTestGlobal ctermfg=15
 hi typescriptAliasDeclaration ctermfg=15
 hi typescriptFuncName ctermfg=15
+hi typescriptTypeParameter ctermfg=15
 
 hi cssIdentifier ctermfg=15
 hi cssClassName ctermfg=15
