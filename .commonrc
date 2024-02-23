@@ -1,4 +1,12 @@
-process_git_diff() {
+# Create hidden-config if missing
+if [ -f ~/.hidden-config ]; then
+    source ~/.hidden-config
+else
+    print "404: '~/.hidden-config' not found. Creating it!"
+    touch ~/.hidden-config
+fi
+
+function process_git_diff() {
     local diffs="$1"
 
     if [ -z "$diffs" ]; then
@@ -60,11 +68,4 @@ alias txn='tmux new -s'
 alias txa='tmux attach -t'
 alias rmnm='rm -rf node_modules'
 
-# Create hidden-config if missing
-if [ -f ~/.hidden-config ]; then
-    source ~/.hidden-config
-else
-    print "404: '~/.hidden-config' not found. Creating it!"
-    touch ~/.hidden-config
-fi
-
+bindkey -s ^P "~/scripts/tmux-nav.sh\n"
