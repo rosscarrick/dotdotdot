@@ -3,6 +3,9 @@ set nocompatible
 set noerrorbells
 set showmatch
 
+" Cursor
+set guicursor=n:block-blinkon1,i-ci-ve:ver25-blinkon1 " blinking cursor with block for normal mode and vertical bar for insert mode
+
 " Tabs
 set expandtab
 set smarttab
@@ -44,7 +47,6 @@ set foldlevelstart=99
 " Spelling
 set spell
 set spelllang=en_gb
-
 
 """""
 """"" Plugins
