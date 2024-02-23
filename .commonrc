@@ -42,6 +42,7 @@ PROMPT='$current_dir $(git_stats)$newline'
 
 export EDITOR='vim'
 
+alias common='vi ~/.commonrc'
 alias notes='cd ~/.notes && vi .'
 alias g=git
 alias d=docker
