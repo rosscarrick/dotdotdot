@@ -1,4 +1,5 @@
 let mapleader = " "
+
 set nocompatible
 set noerrorbells
 set showmatch
@@ -357,6 +358,9 @@ nnoremap <Down> 5j
 
 " Up arrow = up 5
 nnoremap <Up> 5k
+
+" Space+P to FZF folder and open in new TMUX session
+nnoremap <Leader>P :!tmux neww ~/scripts/tmux-nav.sh<CR>
 
 "
 " Snippets
