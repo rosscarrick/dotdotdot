@@ -107,6 +107,11 @@ hi vimFuncName ctermfg=15
 
 hi netrwPlain ctermfg=15
 
+hi bashStatement ctermfg=15
+
+hi shVariable ctermfg=15
+hi shDerefSimple ctermfg=15
+
 hi jsModuleKeyword ctermfg=15
 hi jsObjectKey ctermfg=15
 hi jsFuncCall ctermfg=15
@@ -231,9 +236,7 @@ hi jsonBraces ctermfg=245
 
 hi yamlBlockMappingKey ctermfg=245
 
-hi shVariable ctermfg=245
-
-" Subltler - 242
+" Subtler - 242
 hi cssUnitDecorators ctermfg=242
 hi cssClassNameDot ctermfg=242
 
@@ -273,6 +276,8 @@ hi StatusLine ctermbg=79 ctermfg=233
 hi TabLineSel ctermbg=79 ctermfg=22
 hi Directory ctermfg=79
 hi PmenuSel ctermbg=79 ctermfg=22
+
+hi shCommandSub ctermfg=79
 
 hi GitGutterAdd ctermfg=79
 
