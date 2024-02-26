@@ -134,6 +134,7 @@ hi typescriptTestGlobal ctermfg=15
 hi typescriptAliasDeclaration ctermfg=15
 hi typescriptFuncName ctermfg=15
 hi typescriptTypeParameter ctermfg=15
+hi tsxTagName ctermfg=15
 
 hi cssIdentifier ctermfg=15
 hi cssClassName ctermfg=15
@@ -207,6 +208,7 @@ hi typescriptAsyncFuncKeyword ctermfg=245
 hi typescriptFuncTypeArrow ctermfg=245
 hi typescriptKeywordOp ctermfg=245
 hi typescriptFuncKeyword ctermfg=245
+hi typescriptDestructureLabel ctermfg=245
 
 hi tsxCloseString ctermfg=245
 hi tsxAttrib ctermfg=245
