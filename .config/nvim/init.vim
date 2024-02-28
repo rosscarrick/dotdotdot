@@ -141,6 +141,7 @@ hi cssClassName ctermfg=15
 hi cssTagName ctermfg=15
 hi cssAttributeSelector ctermfg=15
 hi cssClassNameDot ctermfg=15
+hi cssFunctionName ctermfg=15
 
 hi sassVariable ctermfg=15
 hi sassId ctermfg=15
@@ -227,6 +228,7 @@ hi cssTextProp ctermfg=245
 hi cssSelectorOp ctermfg=245
 hi cssSelectorOp2 ctermfg=245
 hi cssFlexibleBoxProp ctermfg=245
+hi cssIEUIProp ctermfg=245
 
 hi sassProperty ctermfg=245
 
