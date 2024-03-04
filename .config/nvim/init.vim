@@ -181,7 +181,6 @@ hi jsOperator ctermfg=245
 hi jsBrackets ctermfg=245
 hi jsParens ctermfg=245
 hi jsObjectBraces ctermfg=245
-hi jsObjectKey ctermfg=245
 hi jsObjectColon ctermfg=245
 hi jsArrowFunction ctermfg=245
 hi jsThis ctermfg=245
