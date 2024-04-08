@@ -135,6 +135,7 @@ hi typescriptAliasDeclaration ctermfg=15
 hi typescriptFuncName ctermfg=15
 hi typescriptTypeParameter ctermfg=15
 hi tsxTagName ctermfg=15
+hi typescriptObjectLabel ctermfg=15
 
 hi cssIdentifier ctermfg=15
 hi cssClassName ctermfg=15
@@ -199,7 +200,6 @@ hi typescriptArrowFunc ctermfg=245
 hi typescriptAssign ctermfg=245
 hi typescriptDotNotation ctermfg=245
 hi typescriptObjectColon ctermfg=245
-hi typescriptObjectLabel ctermfg=245
 hi typescriptPredefinedType ctermfg=245
 hi typescriptAmbientDeclaration ctermfg=245
 hi typescriptTypeReference ctermfg=245
@@ -269,8 +269,12 @@ hi MatchParen ctermfg=183 ctermbg=NONE
 hi Special ctermfg=183
 
 hi jsSpecial ctermfg=183
+hi jsBooleanFalse ctermfg=183
+hi jsBooleanTrue ctermfg=183
 
 hi cssPseudoClassId ctermfg=183
+
+hi typescriptBoolean ctermfg=183
 
 hi jsonBoolean ctermfg=183
 
