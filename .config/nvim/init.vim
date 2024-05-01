@@ -271,6 +271,7 @@ hi Special ctermfg=183
 hi jsSpecial ctermfg=183
 hi jsBooleanFalse ctermfg=183
 hi jsBooleanTrue ctermfg=183
+hi jsUndefined ctermfg=183
 
 hi cssPseudoClassId ctermfg=183
 
