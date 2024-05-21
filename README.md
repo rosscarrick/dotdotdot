@@ -5,13 +5,13 @@
 Add a Git alias to point to a config folder (`/.cfg`) in the home directory.
 
 ```bash
-alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
+alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 
 Clone (bare)
 
 ```bash
-git clone --bare https://github.com/rosscarrick/dotdotdot.git $HOME/.cfg`
+git clone --bare https://github.com/rosscarrick/dotdotdot.git $HOME/.cfg
 ```
 
 Ignore untracked files
@@ -26,9 +26,11 @@ Copy contents
 c checkout
 ```
 
-### Set up Vim
+### Set up Workflow
 
 - [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim) at `~/.nvim`
 - [Install Vim Plug](https://github.com/junegunn/vim-plug)
 - [Install bat](https://github.com/sharkdp/bat)
 - [Install rigrep](https://github.com/BurntSushi/ripgrep#installation)
+- [Install fzf](https://github.com/junegunn/fzf)
+- [Install tmux](https://github.com/tmux/tmux/wiki/Installing)
