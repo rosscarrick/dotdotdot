@@ -42,7 +42,7 @@ function git_stats()
 }
 
 # Enable substitution in the prompt.
-setopt prompt_subst
+###setopt prompt_subst
 
 current_dir='%F{white}%B%2/%b%f'
 newline=$'\n'
@@ -68,4 +68,3 @@ alias txn='tmux new -s'
 alias txa='tmux attach -t'
 alias rmnm='rm -rf node_modules'
 
-bindkey -s ^P "~/scripts/tmux-nav.sh\n"
