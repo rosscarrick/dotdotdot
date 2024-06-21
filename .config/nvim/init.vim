@@ -337,6 +337,15 @@ nnoremap <Leader>j <C-^>
 " Space+n go to next match
 nnoremap <Leader>n *
 
+" Space+ql next quickfix
+nnoremap <Leader>ql :cnext<CR>
+
+" Space+qh prev quickfix
+nnoremap <Leader>qh :cprev<CR>
+
+" Space+qo open quickfix
+nnoremap <Leader>qo :copen<CR>
+
 " Space+c open tree at current file
 nnoremap <Leader>c :Lexplore! %:p:h<CR>
 
