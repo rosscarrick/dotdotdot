@@ -337,11 +337,11 @@ nnoremap <Leader>j <C-^>
 " Space+n go to next match
 nnoremap <Leader>n *
 
-" Space+ql next quickfix
-nnoremap <Leader>ql :cnext<CR>
+" Space+qj next quickfix
+nnoremap <Leader>qj :cnext<CR>
 
-" Space+qh prev quickfix
-nnoremap <Leader>qh :cprev<CR>
+" Space+qk prev quickfix
+nnoremap <Leader>qk :cprev<CR>
 
 " Space+qo open quickfix
 nnoremap <Leader>qo :copen<CR>
