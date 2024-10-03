@@ -78,7 +78,7 @@ colorscheme default
 " white=15
 " subtle=245
 " subtler=242
-" subtlest=238
+" subtlest=241
 " purple=183
 " green=79
 " red=161
@@ -254,15 +254,15 @@ hi jsonQuote ctermfg=242
 
 hi shVarAssign ctermfg=242
 
-" Subtlest - 238
-hi Comment ctermfg=238
-hi LineNrAbove ctermfg=238
-hi LineNrBelow ctermfg=238
-hi Folded ctermfg=238 ctermbg=NONE
-hi TabLine ctermbg=NONE ctermfg=238
-hi Pmenu ctermbg=238 ctermfg=15
+" Subtlest - 241
+hi Comment ctermfg=241
+hi LineNrAbove ctermfg=241
+hi LineNrBelow ctermfg=241
+hi Folded ctermfg=241 ctermbg=NONE
+hi TabLine ctermbg=NONE ctermfg=241
+hi Pmenu ctermbg=241 ctermfg=15
 
-hi GitGutterChange ctermfg=238
+hi GitGutterChange ctermfg=241
 
 " Purple - 183
 hi Number ctermfg=183
@@ -324,7 +324,7 @@ hi SpellRare ctermbg=NONE
 hi SpellLocal ctermbg=NONE
 hi SignColumn ctermbg=NONE
 
-hi CopilotSuggestion ctermbg=234 ctermfg=238
+hi CopilotSuggestion ctermbg=234 ctermfg=241
 
 """""
 """""
