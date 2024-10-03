@@ -228,6 +228,7 @@ hi cssSelectorOp ctermfg=245
 hi cssSelectorOp2 ctermfg=245
 hi cssFlexibleBoxProp ctermfg=245
 hi cssIEUIProp ctermfg=245
+hi cssFunctionComma ctermfg=245
 
 hi sassProperty ctermfg=245
 
@@ -388,3 +389,36 @@ inoremap <C-s>e <esc>ciw<<C-o>p></<C-o>p><esc>F<i
 " console.log()
 inoremap <C-s>l console.log()<left>
 
+
+function! OmitFolderInTabLine()
+  let s = ''
+  for i in range(tabpagenr('$'))
+    " Select the highlighting
+    if i + 1 == tabpagenr()
+      let s .= '%#TabLineSel#'
+    else
+      let s .= '%#TabLine#'
+    endif
+
+    " Set the tab page number (for mouse clicks)
+    let s .= '%' . (i + 1) . 'T'
+
+    " Get the file name for each buffer in the tab
+    let buflist = tabpagebuflist(i + 1)
+    let winnr = tabpagewinnr(i + 1)
+    let bufname = bufname(buflist[winnr - 1])
+
+    " Use only the file name, not the full path
+    let filename = fnamemodify(bufname, ':t')
+
+    " Add the file name to the tab label
+    let s .= ' ' . filename . ' '
+  endfor
+
+  " Add the closing section
+  let s .= '%#TabLineFill#%T'
+
+  return s
+endfunction
+
+set tabline=%!OmitFolderInTabLine()
