@@ -9,20 +9,22 @@ fi
 export EDITOR='vim'
 
 alias common='vi ~/.commonrc'
-alias notes='cd ~/.notes && vi .'
+alias notes='cd ~/.notes && nvim .'
 alias g=git
 alias d=docker
 alias k=kubectl
 alias y=yarn
+alias n=npm
+alias nr='npm run'
 alias pm=pnpm
 alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
-alias vv='vi .'
-alias vimrc='vi ~/.config/nvim/init.vim'
+alias v='vi'
+alias vimrc='cd ~/.config/nvim/ && nvim'
 alias lal='ls -la'
 alias tx=tmux
 alias txn='tmux new -s'
 alias txa='tmux attach -t'
 alias rmnm='rm -rf node_modules'
-
+alias Cd='cd "$(find . -type d -not -path "*/node_modules/*" | fzf)"'
