@@ -27,4 +27,8 @@ alias tx=tmux
 alias txn='tmux new -s'
 alias txa='tmux attach -t'
 alias rmnm='rm -rf node_modules'
+
 alias Cd='cd "$(find . -type d -not -path "*/node_modules/*" | fzf)"'
+
+# chmod +x ~/scripts/node-script-runner.sh
+alias Run='~/scripts/node-script-runner.sh'
