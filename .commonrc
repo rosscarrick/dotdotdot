@@ -21,6 +21,7 @@ alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi='nvim'
 alias vim='vi'
 alias v='vi'
+alias vv='vi .'
 alias vimrc='cd ~/.config/nvim/ && nvim'
 alias lal='ls -la'
 alias tx=tmux

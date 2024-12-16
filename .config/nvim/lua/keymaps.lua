@@ -1,14 +1,23 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+local function nnoremap(keys, command)
+	vim.api.nvim_set_keymap("n", keys, command, { noremap = true, silent = true })
+end
+
 -- save
-vim.api.nvim_set_keymap("n", "<Leader><Leader>", ":w<CR>", { noremap = true, silent = true })
+nnoremap("<Leader><Leader>", ":w<CR>")
 
 -- previous buffer
-vim.api.nvim_set_keymap("n", "<Leader>j", "<C-^>", { noremap = true, silent = true })
+nnoremap("<Leader>j", "<C-^>")
 
 -- fold
-vim.api.nvim_set_keymap("n", "<tab>", "za", { noremap = true, silent = true })
+nnoremap("<tab>", "za")
 
 --open project in tmux window
-vim.keymap.set("n", "<Leader>P", ":!tmux neww ~/scripts/tmux-nav.sh<CR>")
+nnoremap("<Leader>P", ":!tmux neww ~/scripts/tmux-nav.sh<CR>")
+
+--tabs
+nnoremap("<Leader>s", ":tab split<CR>")
+nnoremap("<Right>", ":tabnext +1<CR>")
+nnoremap("<Left>", ":tabnext -1<CR>")
