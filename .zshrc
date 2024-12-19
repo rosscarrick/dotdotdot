@@ -29,9 +29,8 @@ function git_stats()
   else
     branch_diffs=$(git diff --shortstat)
     main_diffs=$(git diff --shortstat $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@') HEAD)
-    diffs_to_push=$(process_git_diff "$branch_diffs")
     pr_size=$(process_git_diff "$main_diffs")
-    echo '%B%F{blue}'$branch' %f%F{yellow}origin: '$diffs_to_push'%f %F{red}PR size: '$pr_size'%f%b'
+    echo '%F{green}' $branch' %f%F{240}PR size: '$pr_size'%f'
   fi
 }
 
