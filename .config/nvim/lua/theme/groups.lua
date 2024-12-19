@@ -1,5 +1,7 @@
 local palette = require("theme.palette")
 
+vim.api.nvim_set_hl(0, "Visual", { bg = palette.fg_subltest, fg = palette.fg })
+
 --------------------------------------------
 ------------------UTILS---------------------
 --------------------------------------------
