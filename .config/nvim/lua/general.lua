@@ -45,5 +45,5 @@ vim.opt.spell = true
 vim.opt.spelllang = "en_gb"
 
 --status
-vim.opt.cmdheight = 0
-vim.opt.statusline = ""
+-- vim.opt.cmdheight = 0
+-- vim.opt.statusline = ""

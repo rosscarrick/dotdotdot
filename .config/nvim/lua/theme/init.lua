@@ -12,9 +12,8 @@ _.fg(
   "cssTagName",
 
   -- ts
-  "@lsp.type.type.typescriptreact",
   "typescriptObjectStaticMethod",
-  "@lsp.type.type.typescriptreact",
+  "@lsp.type.property.typescriptreact",
   "typescriptPredefinedType"
 )
 _.fg_bold("@lsp.typemod.variable.declaration.typescriptreact")
@@ -41,7 +40,7 @@ _.secondary(
   "typescriptMagicComment"
 )
 
-_.tertiary("@boolean.lua", "Boolean")
+_.tertiary("@boolean.lua", "Boolean", "@lsp.type.type.typescriptreact")
 
 _.subtle(
   "Statement",
