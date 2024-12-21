@@ -4,6 +4,7 @@ vim.opt.errorbells = false
 --highlights
 vim.opt.showmatch = true
 vim.opt.termguicolors = true
+vim.cmd("colorscheme habamax")
 
 --lines
 vim.o.number = true
