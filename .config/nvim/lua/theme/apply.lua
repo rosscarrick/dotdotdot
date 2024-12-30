@@ -58,9 +58,6 @@ local function apply(p)
     vim.api.nvim_set_hl(0, group, settings)
   end
 
-  -- DECENT LINKS TO SEE STYLES
-  -- :h ColorColumn
-  -- :h hl-DiagnosticError
   hl("Cursor", { fg = p.text, bg = p.subtle })
   hl("CursorLine", { bg = p.surface })
   hl("Normal", { fg = p.subtlest, bg = p.base })
