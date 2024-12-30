@@ -10,7 +10,7 @@ local function nnoremap(desc, keys, command)
   )
 end
 
-nnoremap("Save", "<Leader><Leader>", ":w<CR>:so %<CR>")
+nnoremap("Save", "<Leader><Leader>", ":w<CR>")
 nnoremap("Previous buffer", "<Leader>j", "<C-^>")
 nnoremap("Toggle fold", "<tab>", "za")
 nnoremap(
