@@ -1,5 +1,3 @@
--- nnoremap("Save", "<Leader><Leader>", ":w<CR>:so %<CR>")
-
 local function apply(p)
   vim.opt.background = "dark"
   vim.opt.termguicolors = true
@@ -78,7 +76,7 @@ local function apply(p)
 
   hl("Function", { fg = p.text, bold = true })
   hl("CursorLineNr", { fg = p.text, bg = p.surface, bold = true })
-  hl("StatusLine", { fg = p.text, bg = p.surface, bold = true })
+  hl("StatusLine", { fg = p.mute, bg = "NONE", bold = true })
 
   hl("Identifier", { fg = p.subtlest })
   hl("LineNr", { fg = p.subtlest })
@@ -135,47 +133,6 @@ local function apply(p)
 
   -- copilot
   hl("CopilotSuggestion", { fg = p.robot })
-
-  --[[
-  TO DO
-  ----
-  SpecialKey
-  VisualNOS
-  PmenuKind
-  PmenuKindSel
-  PmenuExtra
-  PmenuExtraSel
-  debugPC
-  debugBreakpoint
-  ColorColumn
-  SpellBad
-  SpellCap
-  SpellLocal
-  SpellRare
-  Constant
-  Character
-  PreProc
-  Type
-  Underlined
-  Conceal
-  Ignore
-  Debug
-]]
-
-  --[[
-    NOT SET YET
-
-    VertSplit
-    CursorColumn
-    lCursor
-    ToolbarLine
-    ToolbarButton
-    CurSearch
-    Todo
-    DiffChange
-    DiffText
-    diffSubname
-  ]]
 end
 
 return {

@@ -46,5 +46,10 @@ vim.opt.spell = true
 vim.opt.spelllang = "en_gb"
 
 --status
--- vim.opt.cmdheight = 0
--- vim.opt.statusline = ""
+vim.opt.statusline = "  "
+vim.opt.statusline = vim.opt.statusline:get() .. "󰈔 " .. "%f" -- path to file
+vim.opt.statusline = vim.opt.statusline:get() .. "%=" -- Switch to the right side
+vim.opt.statusline = vim.opt.statusline:get() .. "%l" .. ":" .. "%2c" -- Current line
+vim.opt.statusline = vim.opt.statusline:get() .. " / "
+vim.opt.statusline = vim.opt.statusline:get() .. "%L" .. " " -- Total lines
+vim.opt.statusline = vim.opt.statusline:get() .. "  "
