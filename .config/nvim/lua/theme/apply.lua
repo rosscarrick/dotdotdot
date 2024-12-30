@@ -9,6 +9,7 @@ local function apply(p)
   vim.cmd([[
   hi! link Terminal Normal
   hi! link Title Normal
+  hi! link Identifier Normal
   hi! link Directory Normal
   hi! link Question Normal
   hi! link vimVar Normal
@@ -17,6 +18,8 @@ local function apply(p)
   hi! link vimParenSep Normal
   hi! link CurSearch Search
   hi! link TermCursor Cursor
+  hi! link htmlTagName Normal
+  hi! link Type Normal
   
   hi! link @variable Normal
 
@@ -78,7 +81,6 @@ local function apply(p)
   hl("CursorLineNr", { fg = p.text, bg = p.surface, bold = true })
   hl("StatusLine", { fg = p.mute, bg = "NONE", bold = true })
 
-  hl("Identifier", { fg = p.subtlest })
   hl("LineNr", { fg = p.subtlest })
 
   hl("Statement", { fg = p.subtler })
@@ -87,10 +89,11 @@ local function apply(p)
   hl("Delimiter", { fg = p.subtle })
   hl("Operator", { fg = p.subtle })
   hl("NonText", { fg = p.subtle })
+  hl("htmlTag", { fg = p.subtle })
 
   hl("String", { fg = p.primary })
-  hl("Boolean", { fg = p.secondary })
-  hl("Number", { fg = p.tertiary })
+  hl("Number", { fg = p.secondary })
+  hl("Boolean", { fg = p.tertiary })
 
   hl("SpecialKey", { fg = p.mute })
   hl("Comment", { fg = p.mute })
@@ -120,7 +123,7 @@ local function apply(p)
 
   -- telescope
   hl("TelescopeSelection", { fg = p.text, bg = p.surface })
-  hl("TelescopeSelectionCaret", { fg = p.primary })
+  hl("TelescopeSelectionCaret", { fg = p.text })
   hl("TelescopeNormal", { fg = p.mute, bg = p.overlay })
   hl("TelescopeBorder", { fg = p.overlay, bg = p.overlay })
   hl("TelescopeTitle", { fg = p.overlay, bg = p.overlay })

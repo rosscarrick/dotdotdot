@@ -1,4 +1,4 @@
-local default = {
+local lush = {
   base = "#191724",
   surface = "#1e1c2c",
   overlay = "#111019",
@@ -17,6 +17,46 @@ local default = {
   robot = "#582d56",
 }
 
+local lights_out = {
+  base = "#0b0e0d",
+  surface = "#101413",
+  overlay = "#050505",
+  text = "#f4f6f5",
+  subtlest = "#b8c7bf",
+  subtler = "#87a193",
+  subtle = "#5c7568",
+  mute = "#323e38",
+  primary = "#60d7af",
+  secondary = "#c9b99a",
+  tertiary = "#707fc2",
+  danger = "#bd7a7a",
+  success = "#2a9d6f",
+  info = "#9799e3",
+  warning = "#908660",
+  robot = "#4f3653",
+}
+
+local dim = {
+  base = "#121419",
+  surface = "#101413",
+  overlay = "#050505",
+  text = "#f4f6f5",
+  subtlest = "#b8c7bf",
+  subtler = "#87a193",
+  subtle = "#5c7568",
+  mute = "#323e38",
+  primary = "#60d7af",
+  secondary = "#c9b99a",
+  tertiary = "#707fc2",
+  danger = "#bd7a7a",
+  success = "#2a9d6f",
+  info = "#9799e3",
+  warning = "#908660",
+  robot = "#4f3653",
+}
+
 return {
-  default = default,
+  lush = lush,
+  lights_out = lights_out,
+  dim = dim,
 }
