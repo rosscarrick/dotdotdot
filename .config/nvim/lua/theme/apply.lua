@@ -185,6 +185,10 @@ local function apply(p)
 
   -- gitsigns
   hl("GitSignsCurrentLineBlame", { fg = p.mute })
+
+  -- nvim-tree
+  hl("NvimTreeFolderName", { fg = p.text, bold = true })
+  hl("NvimTreeOpenedFolderName", { fg = p.primary, bold = true })
 end
 
 return {
