@@ -76,25 +76,18 @@ local function apply(p)
   hl("MoreMsg", { fg = p.subtlest })
   hl("Question", { fg = p.info })
   hl("QuickFixLine", { fg = p.info })
-
   hl("Function", { fg = p.text, bold = true })
   hl("CursorLineNr", { fg = p.text, bg = p.surface, bold = true })
-  hl("StatusLine", { fg = p.mute, bg = "NONE", bold = true })
-
   hl("LineNr", { fg = p.subtlest })
-
-  hl("Statement", { fg = p.subtler })
-  hl("Special", { fg = p.subtler })
-
-  hl("Delimiter", { fg = p.subtle })
-  hl("Operator", { fg = p.subtle })
-  hl("NonText", { fg = p.subtle })
-  hl("htmlTag", { fg = p.subtle })
-
   hl("String", { fg = p.primary })
   hl("Number", { fg = p.secondary })
   hl("Boolean", { fg = p.tertiary })
-
+  hl("Delimiter", { fg = p.subtle })
+  hl("Operator", { fg = p.subtle })
+  hl("NonText", { fg = p.subtle })
+  hl("Statement", { fg = p.subtler })
+  hl("Special", { fg = p.subtler })
+  hl("StatusLine", { fg = p.mute, bg = "NONE", bold = true })
   hl("SpecialKey", { fg = p.mute })
   hl("Comment", { fg = p.mute })
   hl("Folded", { fg = p.mute })
@@ -103,23 +96,76 @@ local function apply(p)
   hl("StatuslineNC", { fg = p.mute })
   hl("FoldColumn", { fg = p.mute })
   hl("Whitespace", { fg = p.mute })
-
   hl("ErrorMsg", { fg = p.danger })
   hl("WarningMsg", { fg = p.warning })
   hl("DiagnosticOk", { fg = p.success })
   hl("DiagnosticInfo", { fg = p.info })
-
   hl("Added", { fg = p.success })
   hl("Changed", { fg = p.info })
   hl("Removed", { fg = p.danger })
-
   hl("Pmenu", { fg = p.mute, bg = p.overlay })
   hl("PmenuSel", { fg = p.text, bg = p.surface, bold = true })
   hl("PmenuSbar", { bg = p.overlay })
   hl("PmenuThumb", { bg = p.mute })
-
   hl("MatchParen", { fg = p.text, bold = true })
   hl("WildMenu", { fg = p.text, bg = p.mute })
+
+  -- ts
+  hl("typescriptConditional", { fg = p.text })
+  hl("@lsp.mod.declaration.typescript", { fg = p.text })
+  hl("@lsp.type.member.typescriptreact", { fg = p.text, bold = true })
+  hl("tsxIntrinsicTagName", { fg = p.text, bold = true })
+  hl("typescriptExceptions", { fg = p.text })
+  hl("typescriptTry", { fg = p.text })
+  hl("@lsp.type.member.typescript", { fg = p.text, bold = true })
+  hl(
+    "@lsp.typemod.member.defaultLibrary.typescriptreact",
+    { fg = p.text, bold = true }
+  )
+  hl("typescriptStatementKeyword", { fg = p.text, bold = true })
+  hl(
+    "@lsp.typemod.type.declaration.typescriptreact",
+    { fg = p.text, bold = true }
+  )
+  hl("typescriptTernaryOp", { fg = p.text })
+  hl("tsxAttrib", { fg = p.subtlest })
+  hl("@lsp.type.parameter.typescriptreact", { fg = p.subtlest })
+  hl("typescriptDotNotation", { fg = p.subtle })
+  hl("typescriptTypeBracket", { fg = p.subtle })
+  hl("typescriptBraces", { fg = p.subtle })
+  hl("typescriptVariable", { fg = p.subtle })
+  hl("typescriptAssign", { fg = p.subtle })
+  hl("typescriptBlock", { fg = p.subtle })
+  hl("typescriptProperty", { fg = p.subtle })
+  hl("typescriptImport", { fg = p.subtle })
+  hl("typescriptPredefinedType", { fg = p.subtle })
+  hl("@lsp.type.type.typescriptreact", { fg = p.subtle })
+  hl("typescriptObjectColon", { fg = p.subtle })
+  hl("typescriptObjectSpread", { fg = p.subtle })
+  hl("typescriptArrowFunc", { fg = p.subtle })
+  hl("typescriptFuncTypeArrow", { fg = p.subtle })
+  hl("typescriptParens", { fg = p.subtle })
+
+  --html
+  hl("htmlTag", { fg = p.subtle })
+
+  -- md
+  hl("markdownH1", { fg = p.text, bold = true })
+  hl("markdownH2", { fg = p.text, bold = true })
+  hl("markdownH3", { fg = p.text, bold = true })
+  hl("markdownH4", { fg = p.text, bold = true })
+  hl("markdownH5", { fg = p.text, bold = true })
+  hl("markdownH6", { fg = p.text, bold = true })
+  hl("markdownH1Delimiter", { fg = p.mute, bold = true })
+  hl("markdownH2Delimiter", { fg = p.mute, bold = true })
+  hl("markdownH3Delimiter", { fg = p.mute, bold = true })
+  hl("markdownH4Delimiter", { fg = p.mute, bold = true })
+  hl("markdownH5Delimiter", { fg = p.mute, bold = true })
+  hl("markdownH6Delimiter", { fg = p.mute, bold = true })
+  hl("markdownListMarker", { fg = p.secondary })
+  hl("markdownCodeDelimiter", { fg = p.subtle })
+  hl("markdownCodeBlock", { fg = p.primary })
+  hl("markdownCode", { fg = p.primary })
 
   -- telescope
   hl("TelescopeSelection", { fg = p.text, bg = p.surface })
@@ -136,6 +182,9 @@ local function apply(p)
 
   -- copilot
   hl("CopilotSuggestion", { fg = p.robot })
+
+  -- gitsigns
+  hl("GitSignsCurrentLineBlame", { fg = p.mute })
 end
 
 return {
