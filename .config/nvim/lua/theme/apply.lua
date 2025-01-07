@@ -145,9 +145,13 @@ local function apply(p)
   hl("typescriptArrowFunc", { fg = p.subtle })
   hl("typescriptFuncTypeArrow", { fg = p.subtle })
   hl("typescriptParens", { fg = p.subtle })
+  hl("typescriptCommentTodo", { fg = p.warning })
 
   --html
   hl("htmlTag", { fg = p.subtle })
+
+  --css
+  hl("cssCustomProp", { fg = p.primary })
 
   -- md
   hl("markdownH1", { fg = p.text, bold = true })
@@ -186,9 +190,26 @@ local function apply(p)
   -- gitsigns
   hl("GitSignsCurrentLineBlame", { fg = p.mute })
 
+  -- vim fugitive
+  hl("fugitiveUntrackedHeading", { fg = p.text })
+  hl("fugitiveUntrackedModifier", { fg = p.mute })
+  hl("fugitiveUntrackedSection", { fg = p.mute })
+  hl("fugitiveUnstagedSection", { fg = p.mute })
+  hl("fugitiveUnstagedHeading", { fg = p.warning })
+  hl("fugitiveUnstagedModifier", { fg = p.warning })
+  hl("fugitiveStagedSection", { fg = p.text })
+  hl("fugitiveStagedHeading", { fg = p.success })
+  hl("fugitiveStagedModifier", { fg = p.success })
+  hl("fugitiveHash", { fg = p.primary })
+  hl("gitCommitBranch", { fg = p.primary })
+
   -- nvim-tree
   hl("NvimTreeFolderName", { fg = p.text, bold = true })
   hl("NvimTreeOpenedFolderName", { fg = p.primary, bold = true })
+  hl("NvimTreeIndentMarker", { fg = p.mute })
+  hl("NvimTreeGitDeletedIcon", { fg = p.danger })
+  hl("NvimTreeGitDirtyIcon", { fg = p.info })
+  hl("NvimTreeGitNewIcon", { fg = p.success })
 end
 
 return {
