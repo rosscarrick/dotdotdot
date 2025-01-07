@@ -24,7 +24,7 @@ return {
           { buffer = ev.buf, silent = true, desc = "Go to definition" }
         )
 
-        keymap.set("n", "<leader>h", vim.lsp.buf.hover, {
+        keymap.set("n", "?", vim.lsp.buf.hover, {
           buffer = ev.buf,
           silent = true,
           noremap = true,

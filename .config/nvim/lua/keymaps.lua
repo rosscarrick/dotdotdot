@@ -22,4 +22,4 @@ nnoremap(
 nnoremap("Open buffer in new tab", "<Leader>s", ":tab split<CR>")
 nnoremap("Next tab", "<Right>", ":tabnext +1<CR>")
 nnoremap("Prev tab", "<Left>", ":tabnext -1<CR>")
-nnoremap("Show highlight group under cursor", "?", ":Inspect<CR>")
+nnoremap("Show highlight group under cursor", "<C-?>", ":Inspect<CR>")
