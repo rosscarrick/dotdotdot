@@ -146,7 +146,7 @@ local function apply(p)
   hl("typescriptFuncTypeArrow", { fg = p.subtle })
   hl("typescriptParens", { fg = p.subtle })
   hl("typescriptCommentTodo", { fg = p.warning })
-
+  hl("@keyword.return.tsx", { fg = p.text, bold = true })
   --html
   hl("htmlTag", { fg = p.subtle })
 
@@ -210,6 +210,11 @@ local function apply(p)
   hl("NvimTreeGitDeletedIcon", { fg = p.danger })
   hl("NvimTreeGitDirtyIcon", { fg = p.info })
   hl("NvimTreeGitNewIcon", { fg = p.success })
+
+  -- noice
+  hl("NoiceCmdlinePopupBorder", { fg = p.mute, bg = p.overlay })
+  hl("NoiceCmdlinePopup", { bg = p.overlay })
+  hl("NoiceCmdlineIcon", { fg = p.primary })
 end
 
 return {
