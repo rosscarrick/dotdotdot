@@ -45,6 +45,9 @@ vim.opt.sidescrolloff = 10
 vim.opt.spell = true
 vim.opt.spelllang = "en_gb"
 
+--splits
+vim.opt.splitright = true
+
 --status
 vim.opt.statusline = "  "
 vim.opt.statusline = vim.opt.statusline:get() .. "󰈔 " .. "%f" -- path to file
