@@ -12,7 +12,7 @@ local lush = {
   tertiary = "#e0d1ff",
   danger = "#ffb3b3",
   success = "#b5f4a5",
-  info = "#c7ceea",
+  info = "#8c9ee8",
   warning = "#f7d0ab",
   robot = "#582d56",
 }

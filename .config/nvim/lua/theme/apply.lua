@@ -170,6 +170,15 @@ local function apply(p)
   hl("markdownCodeDelimiter", { fg = p.subtle })
   hl("markdownCodeBlock", { fg = p.primary })
   hl("markdownCode", { fg = p.primary })
+  hl("@markup.heading.1.markdown", { fg = p.text, bold = true })
+  hl("@markup.heading.2.markdown", { fg = p.text, bold = true })
+  hl("@markup.heading.3.markdown", { fg = p.text, bold = true })
+  hl("@markup.heading.4.markdown", { fg = p.text, bold = true })
+  hl("@markup.heading.5.markdown", { fg = p.text, bold = true })
+  hl("@markup.heading.6.markdown", { fg = p.text, bold = true })
+  hl("@nospell.markdown_inline", { fg = p.info })
+
+  hl("@markup.strong", { fg = p.text, bold = true })
 
   -- telescope
   hl("TelescopeSelection", { fg = p.text, bg = p.surface })

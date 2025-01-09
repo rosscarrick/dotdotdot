@@ -21,6 +21,9 @@ return {
           secret = os.getenv("ANTHROPIC_API_KEY"),
         },
       },
+      chat_template = require("gp.defaults").short_chat_template,
+      chat_user_prefix = "💬 ",
+      chat_assistant_prefix = { "✨ ", "**{{agent}}**" },
     }
 
     require("gp").setup(config)
@@ -30,7 +33,7 @@ return {
         noremap = true,
         silent = true,
         nowait = true,
-        desc = "GPT prompt " .. desc,
+        desc = "GP Nvim: " .. desc,
       }
     end
 
@@ -103,18 +106,25 @@ return {
 
     -- external
     vim.keymap.set("n", "<C-g>u", function()
+      local choice = vim.fn.inputlist({
+        "Select AI usage to check:",
+        "1. ChatGPT",
+        "2. Anthropic",
+      })
+      local url
+      if choice == 1 then
+        url = "https://platform.openai.com/settings/organization/usage/activity"
+      elseif choice == 2 then
+        url = "https://console.anthropic.com/settings/usage"
+      else
+        print("Invalid selection")
+        return
+      end
       vim.fn.jobstart({
         "open",
-        "https://platform.openai.com/settings/organization/usage/activity",
+        url,
       })
-    end, keymapOptions("Check ChatGPT usage in the browser"))
-
-    -- vim.keymap.set("n", "<C-g>w", function()
-    --   vim.fn.jobstart({
-    --     "open",
-    --     "https://chat.openai.com/chat",
-    --   })
-    -- end, keymapOptions("Start ChatGPT chat in the browser"))
+    end, keymapOptions("Check AI usage in the browser"))
 
     vim.keymap.set("n", "<C-g>w", function()
       local choice =
@@ -123,7 +133,7 @@ return {
       if choice == 1 then
         url = "https://chat.openai.com/chat"
       elseif choice == 2 then
-        url = "https://claude.ai/chat"
+        url = "https://claude.ai/new"
       else
         print("Invalid selection")
         return
