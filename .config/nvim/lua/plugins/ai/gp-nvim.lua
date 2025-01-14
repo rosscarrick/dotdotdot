@@ -2,7 +2,9 @@ return {
   "robitx/gp.nvim",
   config = function()
     local config = {
+      chat_template = require("gp.defaults").short_chat_template,
       openai_api_key = os.getenv("OPENAI_API_KEY"),
+
       providers = {
         openai = {
           disable = false,
@@ -21,9 +23,18 @@ return {
           secret = os.getenv("ANTHROPIC_API_KEY"),
         },
       },
-      chat_template = require("gp.defaults").short_chat_template,
-      chat_user_prefix = "💬 ",
-      chat_assistant_prefix = { "✨ ", "**{{agent}}**" },
+      agents = {
+        {
+          provider = "copilot",
+          name = "ChatCopilot",
+          chat = true,
+          command = false,
+          -- string with model name or table with model name and parameters
+          model = { model = "gpt-4o", temperature = 1.1, top_p = 1 },
+          -- system prompt (use this to specify the persona/role of the AI)
+          system_prompt = "You are an AI coding assistant. Start the first response with '🫡 '. Keep responses concise and to the point.",
+        },
+      },
     }
 
     require("gp").setup(config)
@@ -37,12 +48,12 @@ return {
       }
     end
 
-    -- vim.keymap.set(
-    --   { "n", "i" },
-    --   "<C-g>n",
-    --   "<cmd>GpChatNew vsplit<cr>",
-    --   keymapOptions("New Chat")
-    -- )
+    vim.keymap.set(
+      { "n", "i" },
+      "<C-g>n",
+      "<cmd>GpChatNew vsplit<cr>",
+      keymapOptions("New Chat")
+    )
     vim.keymap.set(
       { "n", "i" },
       "<C-g>t",
