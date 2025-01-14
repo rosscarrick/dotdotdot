@@ -2,15 +2,15 @@
 
 # Check if package.json exists
 if [ ! -f "package.json" ]; then
-  echo "Error: package.json file not found in the current directory."
+  echo "❌ Error: package.json file not found in the current directory."
   exit 1
 fi
 
 # Function to get script details
-get_script_details() {
-  local script_name="$1"
-  grep -P "\"$script_name\":" package.json | sed -E 's/.*: "(.*)".*/\1/'
-}
+# get_script_details() {
+#   local script_name="$1"
+#   grep -P "\"$script_name\":" package.json | sed -E 's/.*: "(.*)".*/\1/'
+# }
 
 # Determine package manager
 if [ -f "yarn.lock" ]; then
