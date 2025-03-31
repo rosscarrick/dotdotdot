@@ -1,25 +1,36 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-local function nnoremap(desc, keys, command)
+local function map(mode, desc, keys, command)
   vim.api.nvim_set_keymap(
-    "n",
+    mode,
     keys,
     command,
     { noremap = true, silent = true, desc = desc }
   )
 end
 
-nnoremap("Save", "<Leader><Leader>", ":w<CR>")
+map("n", "Save", "<Leader><Leader>", ":w<CR>")
 -- nnoremap("Save", "<Leader><Leader>", ":w<CR>:so %<CR>")
-nnoremap("Previous buffer", "<Leader>j", "<C-^>")
-nnoremap("Toggle fold", "<tab>", "za")
-nnoremap(
+map("n", "Previous buffer", "<Leader>j", "<C-^>")
+map("n", "Toggle fold", "<tab>", "za")
+map(
+  "n",
   "Search/create tmux session from projects folder",
   "<Leader>P",
   ":!tmux neww ~/scripts/tmux-nav.sh<CR>"
 )
-nnoremap("Open buffer in new tab", "<Leader>s", ":tab split<CR>")
-nnoremap("Next tab", "<Right>", ":tabnext +1<CR>")
-nnoremap("Prev tab", "<Left>", ":tabnext -1<CR>")
-nnoremap("Show highlight group under cursor", "<C-?>", ":Inspect<CR>")
+
+map(
+  "n",
+  "Search/create tmux session from projects folder",
+  "<Leader>L",
+  ":!tmux neww ~/scripts/ai-build-context.sh<CR>"
+)
+
+map("n", "Open buffer in new tab", "<Leader>s", ":tab split<CR>")
+map("n", "Next tab", "<Right>", ":tabnext +1<CR>")
+map("n", "Prev tab", "<Left>", ":tabnext -1<CR>")
+map("n", "Show highlight group under cursor", "<C-?>", ":Inspect<CR>")
+
+map("x", "Paste without register change", "p", '"_dP')
