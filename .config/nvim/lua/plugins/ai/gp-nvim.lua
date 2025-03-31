@@ -55,6 +55,12 @@ return {
       keymapOptions("New Chat")
     )
     vim.keymap.set(
+      { "v" },
+      "<C-g>n",
+      ":<C-u>'<,'>GpChatPaste vsplit<cr>",
+      keymapOptions("Paste selection in latest/new chat")
+    )
+    vim.keymap.set(
       { "n", "i" },
       "<C-g>t",
       "<cmd>GpChatToggle vsplit<cr>",
@@ -124,7 +130,7 @@ return {
       })
       local url
       if choice == 1 then
-        url = "https://platform.openai.com/settings/organization/usage/activity"
+        url = "https://platform.openai.com/settings/organization/usage"
       elseif choice == 2 then
         url = "https://console.anthropic.com/settings/usage"
       else
