@@ -6,17 +6,11 @@ if [ ! -f "package.json" ]; then
   exit 1
 fi
 
-# Function to get script details
-# get_script_details() {
-#   local script_name="$1"
-#   grep -P "\"$script_name\":" package.json | sed -E 's/.*: "(.*)".*/\1/'
-# }
-
 # Determine package manager
 if [ -f "yarn.lock" ]; then
   PACKAGE_MANAGER="yarn"
-elif [ -f "package-lock.json" ]; then
-  PACKAGE_MANAGER="npm"
+elif [ -f "pnpm-lock.yaml" ]; then
+  PACKAGE_MANAGER="pnpm"
 else
   PACKAGE_MANAGER="npm" # Default to npm if no lock file found
 fi
@@ -29,11 +23,8 @@ selected_script=$(echo "$scripts" | fzf --prompt="Select a script to run: ")
 
 # Execute the selected script if one was chosen
 if [ -n "$selected_script" ]; then
-  echo "Running $PACKAGE_MANAGER run $selected_script"
+  echo "🚀 Running $PACKAGE_MANAGER run $selected_script"
 
-  if [ "$PACKAGE_MANAGER" == "yarn" ]; then
-    yarn run "$selected_script"
-  else
-    npm run "$selected_script"
-  fi
+  "$PACKAGE_MANAGER" run "$selected_script"
+
 fi
