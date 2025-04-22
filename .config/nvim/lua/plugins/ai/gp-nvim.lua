@@ -1,5 +1,6 @@
 return {
   "robitx/gp.nvim",
+  event = "VeryLazy",
   config = function()
     local config = {
       chat_template = require("gp.defaults").short_chat_template,

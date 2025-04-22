@@ -3,13 +3,23 @@ return {
   opts = {
     defaults = {
       prompt_prefix = " ",
-      selection_caret = "┃ ",
-      layout_config = {
-        horizontal = {
-          width = 0.9,
-          preview_width = 0.5,
-        },
+      path_display = {
+        "filename_first",
       },
+      selection_caret = "┃ ",
+      vertical = {
+        width = 0.9,
+        height = 0.9,
+        preview_height = 0.5,
+        mirror = true,
+      },
+      layout_strategy = "vertical", -- This line is important
+      -- layout_config = {
+      --   horizontal = {
+      --     width = 0.9,
+      --     preview_width = 0.5,
+      --   },
+      -- },
     },
   },
   keys = {

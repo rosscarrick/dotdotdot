@@ -1,5 +1,6 @@
 return {
   "github/copilot.vim",
+  event = "InsertEnter",
   config = function()
     vim.api.nvim_create_autocmd("VimEnter", {
       callback = function()
