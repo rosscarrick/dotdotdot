@@ -34,3 +34,4 @@ c checkout
 - [Install rigrep](https://github.com/BurntSushi/ripgrep#installation)
 - [Install fzf](https://github.com/junegunn/fzf)
 - [Install tmux](https://github.com/tmux/tmux/wiki/Installing)
+- [Grab a decent Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/ComicShannsMono)
