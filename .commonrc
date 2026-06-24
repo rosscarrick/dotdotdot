@@ -30,9 +30,8 @@ alias txn='tmux new -s'
 alias txa='tmux attach -t'
 alias rmnm='rm -rf node_modules'
 alias hosts='sudo vim /etc/hosts'
-
+alias Code='code "$(find ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
 alias Cd='cd "$(find . -type d -not -path "*/node_modules/*" -not -path "*/.git/*" -not -path "*/dist/*" -not -path "*/.next/*" -not -path "*/build/*" -not -path "*/.cache/*" | fzf)"'
 
 # chmod +x ~/scripts/node-script-runner.sh
 alias Run='~/scripts/node-script-runner.sh'
-
