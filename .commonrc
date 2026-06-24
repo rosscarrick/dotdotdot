@@ -35,3 +35,8 @@ alias Cd='cd "$(find . -type d -not -path "*/node_modules/*" -not -path "*/.git/
 
 # chmod +x ~/scripts/node-script-runner.sh
 alias Run='~/scripts/node-script-runner.sh'
+
+cd() {
+  builtin cd "$@" && [ -f .nvmrc ] && nvm use 2>/dev/null
+}
+
