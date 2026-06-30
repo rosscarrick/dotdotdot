@@ -24,7 +24,7 @@ return {
       "n",
       "<leader>hd",
       "<cmd>Gitsigns preview_hunk_inline<CR>",
-      { desc = "Go to next hunk" }
+      { desc = "Preview hunk" }
     )
   end,
 }
