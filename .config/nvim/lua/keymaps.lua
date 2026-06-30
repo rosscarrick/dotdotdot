@@ -21,13 +21,6 @@ map(
   ":!tmux neww ~/scripts/tmux-nav.sh<CR>"
 )
 
-map(
-  "n",
-  "Search/create tmux session from projects folder",
-  "<Leader>L",
-  ":!tmux neww ~/scripts/ai-build-context.sh<CR>"
-)
-
 map("n", "Open buffer in new tab", "<Leader>s", ":tab split<CR>")
 map("n", "Next tab", "<Right>", ":tabnext +1<CR>")
 map("n", "Prev tab", "<Left>", ":tabnext -1<CR>")
