@@ -56,3 +56,21 @@ vim.opt.statusline = vim.opt.statusline:get() .. "%l" .. ":" .. "%2c" -- Current
 vim.opt.statusline = vim.opt.statusline:get() .. " / "
 vim.opt.statusline = vim.opt.statusline:get() .. "%L" .. " " -- Total lines
 vim.opt.statusline = vim.opt.statusline:get() .. "  "
+
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = "●",
+    spacing = 4,
+  },
+})
+
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = "E",
+      [vim.diagnostic.severity.WARN] = "W",
+      [vim.diagnostic.severity.INFO] = "I",
+      [vim.diagnostic.severity.HINT] = "H",
+    },
+  },
+})
