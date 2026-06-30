@@ -13,6 +13,7 @@ return {
         typescriptreact = webConfig,
         svelte = webConfig,
         css = webConfig,
+        scss = webConfig,
         html = webConfig,
         xml = webConfig,
         json = webConfig,
