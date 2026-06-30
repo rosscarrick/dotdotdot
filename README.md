@@ -29,7 +29,7 @@ c checkout
 ### Set up Workflow
 
 - [Install NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim) at `~/.nvim`
-- [Install Vim Plug](https://github.com/junegunn/vim-plug)
+- [Install lazy.nvim (plugin manager)](https://github.com/folke/lazy.nvim)
 - [Install bat](https://github.com/sharkdp/bat)
 - [Install rigrep](https://github.com/BurntSushi/ripgrep#installation)
 - [Install fzf](https://github.com/junegunn/fzf)
